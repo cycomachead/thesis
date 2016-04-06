@@ -6,6 +6,7 @@ You can view the online version [here (coming soon)][online].
 
 -----------------------------------------------------
 | Title    | λ - A Snap<em>!</em> Autograder 		|
+| -------- | -------------------------------------- |
 | Author   | Michael Ball 							|
 | Advisor  | [Dr. Dan Garcia][dan] 					|
 | Degree   | Masters of Science, Computer Science 	|
