@@ -1,5 +1,5 @@
 {
-      "structure": {
-      "readme": "contents/_1-introduction.md"
-    }
+  "structure": {
+    "readme": "intro.md"
+  }
 }
