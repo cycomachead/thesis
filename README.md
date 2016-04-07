@@ -14,6 +14,7 @@ You can view the online version [here (coming soon)][online].
 | Date     | May 2016								|
 -----------------------------------------------------
 
+
 [GitBook]: https://gitbook.com/
 [online]: #
 [dan]: https://cs.berkeley.edu/~ddgarcia
