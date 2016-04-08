@@ -12,7 +12,11 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
-
-  ]
-
+    "bibtex-citation"
+  ],
+  "pluginsConfig": {
+    "bibtex": {
+      "bibtex-path": "references.bib"
+    }
+  }
 }
