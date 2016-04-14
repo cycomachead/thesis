@@ -1,8 +1,8 @@
 # Summary
 
-* [Table of Contents](SUMMARY.md)
+* [Table of Contents](contents/toc.md)
 * [Abstract](contents/1-Abstract.md)
-* What Is Snap_!_?
+* What Is Snap<em>!</em>?
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?
@@ -14,7 +14,7 @@
 * System Design
 	* The Web Application
 		* LTI
-	* The Snap_!_ Modifications
+	* The Snap<em>!</em> Modifications
 		* Proxy-Pattern
 * CS10 Lab Checkoffs
 	* Why Oral Lab Checkoffs?
