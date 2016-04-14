@@ -1,12 +1,16 @@
 # Summary
 
+* [Table of Contents](SUMMARY.md)
 * [Abstract](contents/1-Abstract.md)
 * What Is Snap_!_?
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?
-		* This will need lots of research...
+		* but we did it anyway.....
 * Lambda Walkthrough
+	* Student's Perspective
+	* Configuring An Application
+	* Writing Tests
 * System Design
 	* The Web Application
 		* LTI
@@ -19,6 +23,7 @@
 	* Future Semesters
 * Lessons Learned
 	* Snap! Integration UI
+	* Duplicating Serialization is a Poor Practice.
 	* Actionable Feedback
 	* Logging Formats
 	* Don't name your project a Unicode Character.
