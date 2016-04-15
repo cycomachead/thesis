@@ -12,14 +12,13 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
-    {
-      "name": "bibtex-citation",
-      "version": "git+https://github.com/cycomachead/gitbook-plugin-bibtex-citation.git"
-    }
+    "bibtex-citation"
   ],
   "pluginsConfig": {
     "bibtex": {
-      "bibtex-path": "references.bib"
+      "bibtex-path": "references.bib",
+      "references-url": "contents/references.md",
+      "format": "acm"
     }
   }
 }
