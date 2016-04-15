@@ -1,6 +1,10 @@
 .DS_store
 *~
-#
+
+# Gitbook Plugins Used Locally
 node_modules
+# Currently track the bibTeX one
+!node_modules/gitbook-plugin-bibtex-citation
+
 # GitBook's output dir
 _book
