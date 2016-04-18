@@ -40,34 +40,25 @@ module.exports = {
     blocks: {
         references: {
             process: function(blk) {
-                var usedBib = _.filter(this.book.bib, 'used');
-                var sortedBib = _.sortBy(usedBib, 'number');
+                var usedBib, sortedBib, result, formatStyle, msg, formatFunc;
+                usedBib = _.filter(this.book.bib, 'used');
+                sortedBib = _.sortBy(usedBib, 'number');
 
-                var result = '<table class="references">';
-
+                result = '<table class="references">';
+                formatStyle = this.config.get(
+                    'pluginsConfig.bibtex.format',
+                    'ieee'
+                );
+                formatFunc = FORMAT_FUNCTION_MAP[formatStyle];
+                
+                if (!formatFunc) {
+                    msg = 'The format ' + formatStyle + ' is not supported.';
+                    msg += 'Please choose one of:\n * ';
+                    msg += Object.keys(FORMAT_FUNCTION_MAP).join('\n * ');
+                    throw new Error(msg);
+                }
                 // TODO: Extract into a 'formatting' function.
-                sortedBib.forEach(function(item) {
-                    result += '<tr><td>[' + item.number + ']</td><td>';
-
-                    if (item.entryTags.AUTHOR) {
-                        result += formatAuthors(item.entryTags.AUTHOR) + ', ';
-                    }
-                    if (item.entryTags.TITLE) {
-                        result += item.entryTags.TITLE + ', ';
-                    }
-                    if (item.entryTags.BOOKTITLE) {
-                        result += '<i>' + item.entryTags.BOOKTITLE + '</i>, '
-                    }
-                    if (item.entryTags.PUBLISHER) {
-                        result += '<i>' + item.entryTags.PUBLISHER + '</i>, '
-                    }
-                    if (item.entryTags.YEAR) {
-                        result += item.entryTags.YEAR + '.';
-                    }
-
-                    result += '</td></tr>';
-                });
-
+                result += sortedBib.map(formatFunc).join('\n');
                 result += '</table>';
 
                 return result;
@@ -76,6 +67,57 @@ module.exports = {
     }
 };
 
+
+var FORMAT_FUNCTION_MAP = {
+    'acm': formatACM,
+    'ieee' formatIEEE
+};
+
+function formatACM(item) {
+    var result, formatters;
+    formatters = {
+        AUTHOR: (s) => formatAuthors(item.entryTags.AUTHOR) + ', ',
+        TITLE: (s) => s + ',',
+        BOOKTITLE: (s) => `<i>${s}</i>, `,
+        PUBLISHER: (s) => `<i>${s}</i>, `,
+        YEAR: (s) => `${s}.`,
+        URL: (s) => `<a href="${s}" target="_blank">${s}</a>`
+    }
+    
+    result = '<tr><td>[' + item.number + ']</td><td>';
+
+    for (key in formatters) {
+        var data = item.entryTags[key],
+            func = formatters[key];
+        if (data) {
+            result += func(data);
+        }
+    }
+
+    return result + '</td></tr>';
+}
+
+function formatIEEE(item) {
+    var result = '<tr><td>[' + item.number + ']</td><td>';
+
+    if (item.entryTags.AUTHOR) {
+        result += formatAuthors(item.entryTags.AUTHOR) + ', ';
+    }
+    if (item.entryTags.TITLE) {
+        result += item.entryTags.TITLE + ', ';
+    }
+    if (item.entryTags.BOOKTITLE) {
+        result += '<i>' + item.entryTags.BOOKTITLE + '</i>, '
+    }
+    if (item.entryTags.PUBLISHER) {
+        result += '<i>' + item.entryTags.PUBLISHER + '</i>, '
+    }
+    if (item.entryTags.YEAR) {
+        result += item.entryTags.YEAR + '.';
+    }
+
+    return result + '</td></tr>';
+}
 
 
 function formatAuthors (authorsString) {
@@ -87,3 +129,5 @@ function formatAuthors (authorsString) {
         return authorsString;
     }
 }
+
+
