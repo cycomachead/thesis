@@ -1,8 +1,7 @@
 # Summary
 
-* [Table of Contents](contents/toc.md)
 * [Abstract](contents/1-Abstract.md)
-* What Is Snap<em>!</em>?
+* [What Is Snap! ?](contents/2-snap.md)
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?

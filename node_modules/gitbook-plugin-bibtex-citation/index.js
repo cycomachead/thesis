@@ -73,8 +73,29 @@ var FORMAT_FUNCTION_MAP = {
     'ieee' formatIEEE
 };
 
+function formatRowAsStyle(item, style) {
+    var formatters = FORMAT_FUNCTION_MAP[style],
+        output =
+        `<tr class="ref-row ref-row-${style}">
+            <td class="ref-link ref-link-${style}">
+                <a name="ref-item-${item.number}">[${item.number}]</a>
+            </td>
+            <td>\n`;
+    
+    for (key in formatters) {
+        data = item.entryTags[key],
+        func = formatters[key];
+        if (data) {
+            output += `${func(data)}\n`;
+        }
+    }
+
+    return output + '\n</td>\n</tr>';
+}
+
 function formatACM(item) {
     var result, formatters;
+    
     formatters = {
         AUTHOR: (s) => formatAuthors(item.entryTags.AUTHOR) + ', ',
         TITLE: (s) => s + ',',
