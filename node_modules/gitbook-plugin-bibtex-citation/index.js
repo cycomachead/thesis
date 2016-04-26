@@ -70,7 +70,7 @@ module.exports = {
 
 var FORMAT_FUNCTION_MAP = {
     'acm': formatACM,
-    'ieee' formatIEEE
+    'ieee': formatIEEE
 };
 
 function formatRowAsStyle(item, style) {

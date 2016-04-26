@@ -20,5 +20,22 @@
       "references-url": "contents/references.md",
       "format": "acm"
     }
+  },
+  "pdf": {
+      "toc": true,
+      "pageNumbers": true,
+      "fontSize": 12,
+      "fontFamily": "Times",
+      "paperSize": "letter",
+      "chapterMark" : "pagebreak",
+      "pageBreaksBefore": "/",
+      "margin": {
+          "right": 62,
+          "left": 62,
+          "top": 56,
+          "bottom": 56
+      },
+      "headerTemplate": null,
+      "footerTemplate": null
   }
 }
