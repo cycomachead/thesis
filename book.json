@@ -1,9 +1,6 @@
 {
   "title": "λ - A Snap! Autograder",
   "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
-  "structure": {
-    "readme": "intro.md"
-  },
   "styles": {
       "website": "styles/website.css",
       "ebook": "styles/ebook.css",

@@ -1,9 +1,7 @@
 # Summary
 
-* [Abstract](contents/1-Abstract.md)
-* [Table of Contents](SUMMARY.md)
-* [Introduction](intro.md)
-* [What Is Snap! ?](contents/2-snap.md)
+* [Abstract](contents/abstract.md)
+* [Introduction](contents/introduction.md)
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?
