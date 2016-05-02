@@ -2,7 +2,7 @@
 
 This is the repository for my Master's Thesis, formatted as a [GitBook][GitBook].
 
-You can view the online version [here (coming soon)][online].
+You can view the [online version (WIP)][online].
 
 -----------------------------------------------------
 | Title    | λ - A Snap<em>!</em> Autograder 		|
@@ -15,6 +15,6 @@ You can view the online version [here (coming soon)][online].
 -----------------------------------------------------
 
 [GitBook]: https://gitbook.com/
-[online]: #
+[online]: https://cycomachead.gitbooks.io/thesis/content/index.html
 [dan]: https://cs.berkeley.edu/~ddgarcia
 
