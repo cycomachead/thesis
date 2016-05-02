@@ -9,13 +9,21 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
-    "bibtex-citation"
+    "bibtex-citation",
+    {
+        "name": "image-captions",
+        "version": "git+https://github.com/todvora/gitbook-plugin-image-captions.git"
+    }
   ],
   "pluginsConfig": {
     "bibtex": {
       "bibtex-path": "references.bib",
       "references-url": "contents/references.md",
       "format": "acm"
+    },
+    "image-captions": {
+        "variable_name": "figures",
+        "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_"
     }
   },
   "pdf": {
