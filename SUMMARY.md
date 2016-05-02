@@ -3,15 +3,19 @@
 * [README](README.md)
 * [Abstract](contents/abstract.md)
 * [Introduction](contents/introduction.md)
+* Related Work
 * Design
 * Implementation
+	* edX JS Input
+	* Moving to LTI
+	* Dedicated Database (?)
 * Experimentation
-* Related Work
 * Future Work
 * Acknowledgements
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)
 * Appendix
+	* Documentation
 
 * A Note About Autograding
 	* Why do we need an autograder?
