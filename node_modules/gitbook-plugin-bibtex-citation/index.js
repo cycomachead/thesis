@@ -12,7 +12,9 @@ module.exports = {
 
     filters: {
         cite: function(key) {
-            var citation = _.find(this.book.bib, {'citationKey': key.toUpperCase()});
+            var citation = _.find(this.book.bib, {'citationKey': key.toUpperCase()}),
+                refsPath = this.config.get('pluginsConfig.bibtex.references-url', null);
+                linkText = '<a href="$URL#ref-item-$NUMBER">$NUMBER</a>';
 
             if (citation != undefined) {
                 if (!citation.used) {
@@ -20,8 +22,13 @@ module.exports = {
                     this.book.bibCount++;
                     citation.number = this.book.bibCount;
                 }
-                // TODO: Add a link to the table.
-                return '[' + citation.number + ']';
+                if (refsPath) {
+                    linkText = linkText.replace(/\$URL/, formatReferenceURL(refsPath));
+                    linkText = linkText.replace(/\$NUMBER/g, citation.number);
+                } else {
+                    linkText = citation.number;
+                }
+                return '[' + linkText + ']';
             } else {
                 return "[Citation not found]";
             }
@@ -151,4 +158,10 @@ function formatAuthors (authorsString) {
     }
 }
 
-
+/*
+    - make sure it has a leading /
+    - make sure the ending is .html
+*/
+function formatReferenceURL(path) {
+    return path; /* TODO */
+}
