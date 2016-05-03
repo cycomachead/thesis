@@ -1,3 +1,4 @@
 # References
 
-<!-- % references % % endreferences % -->
+{% references %}
+{% endreferences %}

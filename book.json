@@ -1,5 +1,5 @@
 {
-  "title": "λ - A Snap! Autograder",
+  "title": "λ - An Autograder for Snap!",
   "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
   "styles": {
       "website": "styles/website.css",
