@@ -1,5 +1,5 @@
-Bibtex Citations Gitbook Plugin
-==============
+# Bibtex Citations Gitbook Plugin
+
 
 This plugins requires gitbook `>=2.0.0`.
 
@@ -30,6 +30,8 @@ You can also add a table of references through:
 
 Only used literature is included in the table of references. They are ordered by the usage within the text.
 
+
+### Configuration
 
 ### Limitations
 
