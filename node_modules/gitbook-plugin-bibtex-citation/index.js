@@ -11,7 +11,7 @@ module.exports = {
     },
 
     filters: {
-        cite: function(key) {
+        cite: function (key) {
             var citation = _.find(this.book.bib, {'citationKey': key.toUpperCase()}),
                 refsPath = this.config.get('pluginsConfig.bibtex.references-url', null);
                 linkText = '<a href="$URL#ref-item-$NUMBER">$NUMBER</a>';
@@ -36,9 +36,9 @@ module.exports = {
     },
 
     hooks: {
-        init: function() {
+        init: function () {
             var bibTexPath = this.config.get('pluginsConfig.bibtex.bibtex-path', 'literature.bib');
-            var bib = fs.readFileSync(this.root + '/' + bibTexPath, 'utf8');
+            var bib = fs.readFileSync(bibTexPath, 'utf8');
             this.bib = bibtexParse.toJSON(bib);
             this.bibCount = 0;
         }
@@ -46,7 +46,7 @@ module.exports = {
 
     blocks: {
         references: {
-            process: function(blk) {
+            process: function (blk) {
                 var usedBib, sortedBib, result, formatStyle, msg, formatFunc;
                 usedBib = _.filter(this.book.bib, 'used');
                 sortedBib = _.sortBy(usedBib, 'number');

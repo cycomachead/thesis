@@ -1,11 +1,11 @@
-# λ - A Snap<em>!</em> Autograder
+# λ - An Autograder for Snap<em>!</em>
 
 This is the repository for my Master's Thesis, formatted as a [GitBook][GitBook].
 
 You can view the [online version (WIP)][online].
 
 -----------------------------------------------------
-| Title    | λ - A Snap<em>!</em> Autograder 		|
+| Title    | λ - An Autograder for Snap<em>!</em> 	|
 | -------- | -------------------------------------- |
 | Author   | Michael Ball 							|
 | Advisor  | [Dr. Dan Garcia][dan] 					|

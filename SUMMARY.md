@@ -8,14 +8,17 @@
 * Implementation
 	* edX JS Input
 	* Moving to LTI
-	* Dedicated Database (?)
-* Experimentation
+	* Dedicated Database
+		* Simpler JS Test
+* Results
 * Future Work
 * Acknowledgements
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)
 * Appendix
 	* Documentation
+
+----
 
 * A Note About Autograding
 	* Why do we need an autograder?
