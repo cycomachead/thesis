@@ -1,16 +1,18 @@
 {
   "name": "gitbook-plugin-bibtex-citation",
   "description": "Bibtex citations for GitBook",
-  "author": "Manuel Mitasch",
+  "author": {
+    "name": "Manuel Mitasch"
+  },
   "main": "index.js",
-  "version": "1.2.0",
+  "version": "1.1.1",
   "engines": {
-    "gitbook": ">=2.0.0"
+    "gitbook": ">1.x.x"
   },
   "homepage": "https://github.com/manuelmitasch/gitbook-plugin-bibtex-citation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/manuelmitasch/gitbook-plugin-bibtex-citation"
+    "url": "git+https://github.com/manuelmitasch/gitbook-plugin-bibtex-citation.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -18,13 +20,30 @@
     "lodash": "^4.0.0"
   },
   "scripts": {},
-  "gitbook": {
-      "properties": {
-          "bibtex-path": {
-              "type": "string",
-              "default": "literature.bib",
-              "description": "Path to the BibTeX references file."
-          }
-      }
-  }
+  "gitHead": "75eea2ce7b982b6361c772b6b57d98643b0c7b43",
+  "bugs": {
+    "url": "https://github.com/manuelmitasch/gitbook-plugin-bibtex-citation/issues"
+  },
+  "_id": "gitbook-plugin-bibtex-citation@1.1.1",
+  "_shasum": "fc49979389228ef10d8eadfcae3f2622148bdd94",
+  "_from": "gitbook-plugin-bibtex-citation@1.1.1",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "manuelmitasch",
+    "email": "mnospam@in4.at"
+  },
+  "dist": {
+    "shasum": "fc49979389228ef10d8eadfcae3f2622148bdd94",
+    "tarball": "https://registry.npmjs.org/gitbook-plugin-bibtex-citation/-/gitbook-plugin-bibtex-citation-1.1.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "manuelmitasch",
+      "email": "mnospam@in4.at"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-bibtex-citation/-/gitbook-plugin-bibtex-citation-1.1.1.tgz",
+  "readme": "ERROR: No README data found!"
 }
