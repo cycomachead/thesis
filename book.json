@@ -9,7 +9,7 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
-    "bibtex-citation",
+    "bibtex-citation-michael",
     "image-captions"
   ],
   "pluginsConfig": {

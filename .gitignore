@@ -4,7 +4,7 @@
 # Gitbook Plugins Used Locally
 node_modules/*
 # Currently track the bibTeX one
-!node_modules/gitbook-plugin-bibtex-citation
+!node_modules/gitbook-plugin-bibtex-citation-michael
 
 # GitBook's output dir
 _book
