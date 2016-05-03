@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-bibtex-citation",
+  "name": "gitbook-plugin-bibtex-citation-michael",
   "description": "Bibtex citations for GitBook",
   "author": "Manuel Mitasch",
   "main": "index.js",
