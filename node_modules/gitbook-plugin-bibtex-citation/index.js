@@ -13,7 +13,7 @@ module.exports = {
     filters: {
         cite: function (key) {
             var citation = _.find(this.book.bib, {'citationKey': key.toUpperCase()}),
-                refsPath = this.config.get('pluginsConfig.bibtex.references-url', null);
+                refsPath = this.book.config.get('pluginsConfig.bibtex.references-url', null);
                 linkText = '<a href="$URL#ref-item-$NUMBER">$NUMBER</a>';
 
             if (citation != undefined) {
@@ -52,7 +52,7 @@ module.exports = {
                 sortedBib = _.sortBy(usedBib, 'number');
 
                 result = '<table class="references">';
-                formatStyle = this.config.get(
+                formatStyle = this.book.config.get(
                     'pluginsConfig.bibtex.format',
                     'ieee'
                 );
@@ -85,7 +85,7 @@ function formatRowAsStyle(item, style) {
         output =
         `<tr class="ref-row ref-row-${style}">
             <td class="ref-link ref-link-${style}">
-                <a name="ref-item-${item.number}">[${item.number}]</a>
+                <a name="ref-item-${item.number}">${item.number}.</a>
             </td>
             <td>\n`;
     
@@ -105,14 +105,14 @@ function formatACM(item) {
     
     formatters = {
         AUTHOR: (s) => formatAuthors(item.entryTags.AUTHOR) + ', ',
-        TITLE: (s) => s + ',',
-        BOOKTITLE: (s) => `<i>${s}</i>, `,
-        PUBLISHER: (s) => `<i>${s}</i>, `,
-        YEAR: (s) => `${s}.`,
-        URL: (s) => `<a href="${s}" target="_blank">${s}</a>`
+        TITLE: (s) => s + ', ',
+        BOOKTITLE: (s) => ` <i>${s}</i>, `,
+        PUBLISHER: (s) => ` <i>${s}</i>, `,
+        YEAR: (s) => ` ${s}. `,
+        URL: (s) => ` <a href="${s}" target="_blank">${s}</a> `
     }
     
-    result = '<tr><td>[' + item.number + ']</td><td>';
+    result = '<tr><td>' + item.number + '.</td><td>';
 
     for (key in formatters) {
         var data = item.entryTags[key],
