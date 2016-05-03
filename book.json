@@ -10,10 +10,7 @@
   },
   "plugins": [
     "bibtex-citation",
-    {
-        "name": "image-captions",
-        "version": "git+https://github.com/cycomachead/gitbook-plugin-image-captions.git"
-    }
+    "image-captions"
   ],
   "pluginsConfig": {
     "bibtex": {
