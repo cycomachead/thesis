@@ -83,17 +83,16 @@ var FORMAT_FUNCTION_MAP = {
 function formatRowAsStyle(item, style) {
     var formatters = FORMAT_FUNCTION_MAP[style],
         output =
-        `<tr class="ref-row ref-row-${style}">
-            <td class="ref-link ref-link-${style}">
-                <a name="ref-item-${item.number}">${item.number}.</a>
-            </td>
-            <td>\n`;
+        '<tr class="ref-row ref-row-' + style + '">' +
+        '<td class="ref-link ref-link-' + style + '">' +
+        '<a name="ref-item-' + item.number + '">' + item.number + '.</a>' +
+        '</td><td>\n';
     
     for (key in formatters) {
         data = item.entryTags[key],
         func = formatters[key];
         if (data) {
-            output += `${func(data)}\n`;
+            output += func(data) + '\n';
         }
     }
 
@@ -104,12 +103,24 @@ function formatACM(item) {
     var result, formatters;
     
     formatters = {
-        AUTHOR: (s) => formatAuthors(item.entryTags.AUTHOR) + ', ',
-        TITLE: (s) => s + ', ',
-        BOOKTITLE: (s) => ` <i>${s}</i>, `,
-        PUBLISHER: (s) => ` <i>${s}</i>, `,
-        YEAR: (s) => ` ${s}. `,
-        URL: (s) => ` <a href="${s}" target="_blank">${s}</a> `
+        AUTHOR: function (s) { 
+            return formatAuthors(item.entryTags.AUTHOR) + ', '
+        },
+        TITLE: function (s) { 
+            return s + ', '
+        },
+        BOOKTITLE: function (s) { 
+            return ' <i>' + s +'</i>, '
+        },
+        PUBLISHER: function (s) { 
+            return ' <i>' + s +'</i>, '
+        },
+        YEAR: function (s) { 
+            return s + '. '
+        },
+        URL: function (s) { 
+            return ' <a href="' + s + '" target="_blank">' + s + '</a> '
+        }
     }
     
     result = '<tr><td>' + item.number + '.</td><td>';
