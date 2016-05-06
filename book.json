@@ -10,8 +10,8 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
-    "bibtex-citation-michael",
-    "image-captions"
+      "bibtex-citation-michael",
+      "image-captions"
   ],
   "pluginsConfig": {
     "bibtex": {
@@ -37,12 +37,12 @@
       "chapterMark" : "none",
       "pageBreaksBefore": "/",
       "margin": {
-          "right": 62,
-          "left": 62,
-          "top": 56,
-          "bottom": 56
+          "right": 75,
+          "left": 75,
+          "top": 75,
+          "bottom": 75
       },
-      "headerTemplate": null,
+      "headerTemplate": "",
       "footerTemplate": "_PAGENUM_"
   }
 }
