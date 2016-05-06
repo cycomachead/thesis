@@ -2,8 +2,9 @@
 
 * [README](README.md)
 * [Abstract](contents/abstract.md)
+* [Acknowledgements](contents/acknowledgements.md)
 * [Introduction](contents/introduction.md)
-* Related Work
+* [Related Work](contents/related-work.md)
 * Design
 * Implementation
 	* edX JS Input
