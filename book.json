@@ -1,5 +1,6 @@
 {
   "title": "λ - An Autograder for Snap!",
+  "author": "Michael Ball",
   "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
   "styles": {
       "website": "styles/website.css",
@@ -24,13 +25,16 @@
         "list_caption": "_CAPTION_"
     }
   },
+  "structure": {
+      "readme": "abstract.md"
+  },
   "pdf": {
       "toc": true,
       "pageNumbers": true,
-      "fontSize": 12,
-      "fontFamily": "Times",
+      "fontSize": 11,
+      "fontFamily": "Times New Roman",
       "paperSize": "letter",
-      "chapterMark" : "pagebreak",
+      "chapterMark" : "none",
       "pageBreaksBefore": "/",
       "margin": {
           "right": 62,
@@ -39,6 +43,6 @@
           "bottom": 56
       },
       "headerTemplate": null,
-      "footerTemplate": null
+      "footerTemplate": "_PAGENUM_"
   }
 }

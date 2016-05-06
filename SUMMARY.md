@@ -1,7 +1,6 @@
 # Summary
 
-* [README](README.md)
-* [Abstract](contents/abstract.md)
+* [Abstract](abstract.md)
 * [Acknowledgements](contents/acknowledgements.md)
 * [List of Figures](contents/figures.md)
 * [Introduction](contents/introduction.md)
