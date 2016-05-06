@@ -5,14 +5,14 @@
 * [Acknowledgements](contents/acknowledgements.md)
 * [List of Figures](contents/figures.md)
 * [Introduction](contents/introduction.md)
+	* [Snap!](contents/introduction.md#snap)
+	* [BJC](contents/introduction.md#the-beauty-and-joy-of-computing)
+	* [CS10](contents/introduction.md#cs10)
 * [Related Work](contents/related-work.md)
 * [Design Principles](contents/design.md)
-* Implementation
-	* edX JS Input
-	* Moving to LTI
-	* Dedicated Database
-		* Simpler JS Test
-* Results
+* [Implementation](contents/implementation.md)
+* [Experimental Setup](contents/trial.md)
+* [Results](contents/results.md)
 * Future Work
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)

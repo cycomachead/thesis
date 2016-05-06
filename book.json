@@ -10,8 +10,7 @@
   },
   "plugins": [
     "bibtex-citation-michael",
-    "image-captions",
-    "numbered-headings"
+    "image-captions"
   ],
   "pluginsConfig": {
     "bibtex": {
