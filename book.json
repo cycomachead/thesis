@@ -13,6 +13,9 @@
       "bibtex-citation-michael",
       "image-captions"
   ],
+  "version": {
+      "gitbook": ">2.6.0"
+  },
   "pluginsConfig": {
     "bibtex": {
       "bibtex-path": "references.bib",
@@ -31,10 +34,10 @@
   "pdf": {
       "toc": true,
       "pageNumbers": true,
-      "fontSize": 11,
-      "fontFamily": "Times New Roman",
+      "fontSize": 12,
+      "fontFamily": "FreightText Pro Book",
       "paperSize": "letter",
-      "chapterMark" : "none",
+      "chapterMark" : "pagebreak",
       "pageBreaksBefore": "/",
       "margin": {
           "right": 75,

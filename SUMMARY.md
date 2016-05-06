@@ -18,9 +18,6 @@
 * Appendix
 	* Documentation
 	* Source Code
-
-----
-
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?

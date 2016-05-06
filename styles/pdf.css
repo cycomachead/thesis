@@ -1,0 +1,22 @@
+h1, h2, h3 {
+  font-family: 'FreightMicro Pro Book';
+  font-weight: 200 !important;
+}
+
+body, p {
+  font-family: 'FreightText Pro Book';
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  font-family: 'Source Code Pro';
+}
+
+p:first-of-type:first-letter {
+  font-size: 70px; float: left; margin: 10px 10px 0 0; line-height: 0.8;
+}
+
+td p:first-of-type:first-letter,
+li p a:first-of-type:first-letter {
+  font-size: 12pt !important;
+}
