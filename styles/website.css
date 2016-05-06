@@ -1,20 +1,25 @@
+.book.font-family-0,
 h1, h2, h3 {
   font-family: 'FreightMicro Pro Book';
-  font-weight: 200 !important;
+  font-weight: 300;
 }
 
-body, p {
+
+.book.font-family-1, 
+body, p, .book {
   font-family: 'FreightSans Pro Book';
 }
 
-code {
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal pre {
   font-family: 'Source Code Pro';
 }
+
 p:first-of-type:first-letter {
   font-size: 70px; float: left; margin: 10px 10px 0 0; line-height: 0.8;
 }
 
 td p:first-of-type:first-letter,
 li p a:first-of-type:first-letter {
-  font-size: 12pt !important;
+  font-size: initial;
 }

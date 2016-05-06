@@ -10,11 +10,13 @@
       "epub": "styles/epub.css"
   },
   "plugins": [
+      "anchors",
+      "indexes",
       "bibtex-citation-michael",
       "image-captions"
   ],
   "version": {
-      "gitbook": ">2.6.0"
+      "gitbook": ">=2.6.0"
   },
   "pluginsConfig": {
     "bibtex": {

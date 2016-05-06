@@ -12,12 +12,12 @@
 * [Implementation](contents/implementation.md)
 * [Experimental Setup](contents/trial.md)
 * [Results](contents/results.md)
-* Future Work
+* [Future Work](contents/future-work.md)
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)
-* Appendix
-	* Documentation
-	* Source Code
+* [Appendix A: Documentation](docs/README.md)
+* [Appendix B: Source Code](contents/source-code.md)
+---
 * A Note About Autograding
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?

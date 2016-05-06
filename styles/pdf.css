@@ -1,9 +1,12 @@
+.book.font-family-0,
 h1, h2, h3 {
   font-family: 'FreightMicro Pro Book';
   font-weight: 200 !important;
 }
 
-body, p {
+
+.book.font-family-1, 
+body, p, .book {
   font-family: 'FreightText Pro Book';
 }
 
@@ -18,5 +21,11 @@ p:first-of-type:first-letter {
 
 td p:first-of-type:first-letter,
 li p a:first-of-type:first-letter {
-  font-size: 12pt !important;
+  font-size: initial !important;
+}
+
+.page .section.toc li span.inner span.page, span.page {
+  float: left !important;
+  padding-right: 5px;
+  padding-left: 0;
 }
