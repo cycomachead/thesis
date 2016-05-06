@@ -20,7 +20,8 @@
     },
     "image-captions": {
         "variable_name": "figures",
-        "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_"
+        "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_",
+        "list_caption": "_CAPTION_"
     }
   },
   "pdf": {

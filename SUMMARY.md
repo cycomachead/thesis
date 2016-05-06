@@ -3,9 +3,10 @@
 * [README](README.md)
 * [Abstract](contents/abstract.md)
 * [Acknowledgements](contents/acknowledgements.md)
+* [List of Figures](contents/figures.md)
 * [Introduction](contents/introduction.md)
 * [Related Work](contents/related-work.md)
-* Design
+* [Design Principles](contents/design.md)
 * Implementation
 	* edX JS Input
 	* Moving to LTI
@@ -13,11 +14,11 @@
 		* Simpler JS Test
 * Results
 * Future Work
-* Acknowledgements
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)
 * Appendix
 	* Documentation
+	* Source Code
 
 ----
 
