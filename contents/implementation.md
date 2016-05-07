@@ -26,12 +26,10 @@ However, we encountered several problems while developing the `JSInput` based in
 
 The one benefit of these problems was that it forced the development of the autograder into two components: A JS interface to edX, and a "dumb" client-side component that sits on top of Snap<em>!</em>. This distinction was helpful when adapting the autograder to work with the new web application.
 
-perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. → LTI
+perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. Fortunately, the 
 
 ## Basic Architecture
-* Rails
-* Postgres
-* Snap<em>!</em>
+λ is primarily a Ruby on Rails "ROR" {{ "ror" | cite }} web application
 
 
 ## LTI & User Accounts
