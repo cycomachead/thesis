@@ -46,7 +46,7 @@
         "headerTemplate": "",
         "footerTemplate": "_PAGENUM_",
         "ebookConvertOptions": {
-            "--pdf-add-toc": true,
+            "--chapter": "/",
             "--embed-all-fonts": true
         }
     }
