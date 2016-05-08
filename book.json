@@ -4,10 +4,7 @@
     "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
     "styles": {
         "website": "styles/website.css",
-        "ebook": "styles/ebook.css",
-        "pdf": "styles/pdf.css",
-        "mobi": "styles/mobi.css",
-        "epub": "styles/epub.css"
+        "ebook": "styles/ebook.css"
     },
     "plugins": [
         "anchors",
@@ -22,6 +19,7 @@
             "format": "acm"
         },
         "image-captions": {
+            "attributes": { "width": "360" },
             "variable_name": "figures",
             "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_",
             "list_caption": "_CAPTION_"

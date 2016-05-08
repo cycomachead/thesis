@@ -32,7 +32,9 @@
   font-style: normal;
 }
 
-
+figure {
+  text-align: center;
+}
 
 .book.font-family-0,
 h1, h2, h3, h4, h5, h6,
@@ -41,7 +43,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Freight Micro Pro' !important;
 }
 
-.book.font-family-1, 
+.book.font-family-1,
 body, p, .book {
   font-family: 'Freight Sans Pro';
 }
