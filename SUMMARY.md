@@ -9,6 +9,7 @@
 	* [CS10](contents/introduction.md#cs10)
 * [Related Work](contents/related-work.md)
 * [Design Principles](contents/design.md)
+* [Walkthrough](contents/walkthrough.md)
 * [Implementation](contents/implementation.md)
 * [Experimental Setup](contents/trial.md)
 * [Results](contents/results.md)
