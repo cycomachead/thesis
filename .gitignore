@@ -1,5 +1,5 @@
 .DS_store
-*~
+*~*
 
 # Gitbook Plugins Used Locally
 node_modules/*
