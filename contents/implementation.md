@@ -26,13 +26,31 @@ However, we encountered several problems while developing the `JSInput` based in
 
 The one benefit of these problems was that it forced the development of the autograder into two components: A JS interface to edX, and a "dumb" client-side component that sits on top of Snap<em>!</em>. This distinction was helpful when adapting the autograder to work with the new web application.
 
-perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. Fortunately, the 
+Perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. Fortunately, the 
 
 ## Basic Architecture
-λ is primarily a Ruby on Rails "ROR" {{ "ror" | cite }} web application
+λ is a Ruby on Rails "ROR" {{ "ror" | cite }} web application backed by a PostgreSQL database. The database primarily contains a set of questions, a submissions log, and a users table, as well as some additional metadata. The current version is deployed to Heroku at [lambda.cs10.org](https://lambda.cs10.org), but it could be deployed to any cloud provider.
 
+### Questions and Submissions
+The core application is supported by two, fairly simple, data models: `Question`s and `Submission`s. 
 
-## LTI & User Accounts
+A `Question` needs only three attributes:
+
+* `title`: A human-readable ID for the question
+* `points`: Points are used to normalize scores. (See the LTI section below.)
+* `test file`: The test file is a JavaScript file (described below) which includes the test cases as well as feedback presented to the student.
+
+Though they aren't currently used, future updates for will make use of the following properties:
+
+* `content`: Currently, it is up to course staff to provide context for the questions which are being graded. In the future, the λ will display this content alongside the Snap<em>!</em> interface.
+* `tags`: Questions can contain tags which can aid in searching, or trying to correlate student performance across problems. There is also potential for using tags to recommend problems to students as a study tool.
+
+A `Submission` has a few key properties:
+
+* `test results` is a JSON-formatted result from the autograder. It contains the points given to each test case as well as the specific results and feedback. 
+* 
+
+### LTI & User Accounts
 * LTI
 * Oauth
 * Snap<em>!</em>
@@ -44,3 +62,9 @@ perhaps most importantly: the grading system could only work with edX. CS10 uses
 	* Moving to LTI
 	* Dedicated Database
 		* Simpler JS Test
+
+
+* Lambda Walkthrough
+	* Student's Perspective
+	* Configuring An Application
+	* Writing Tests
