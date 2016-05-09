@@ -62,9 +62,13 @@ section p:first-of-type:first-letter {
   line-height: 0.8;
 }
 
-.normal:first-letter, .normal,
-#ref-item-1, #ref-item-1:first-letter,
+.normal:first-letter,
+#ref-item-1:first-letter,
 td p:first-letter,
-li p a:first-of-type:first-letter {
+section li p:first-of-type:first-letter {
   font-size: inherit !important;
+  font-weight: inherit;
+  float: none;
+  margin: auto;
+  line-height: unset;
 }
