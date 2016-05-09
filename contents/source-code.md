@@ -1,5 +1,7 @@
 # Obtaining the Source Code
 
+&nbsp; <!-- disable the big T-->
+
 The code for all projects in this report is available in various reoisitories on Github.
 
 * [cycomachead/lambda][] contains the main Rails web application.
