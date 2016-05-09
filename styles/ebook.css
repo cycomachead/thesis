@@ -54,7 +54,7 @@ body, p, .book p, .book div, .book {
   font-family: 'Source Code Pro';
 }
 
-p:first-of-type:first-letter {
+section p:first-of-type:first-letter {
   font-family: 'Freight Micro Pro';
   font-weight: normal;
   font-size: 60px;
@@ -63,10 +63,11 @@ p:first-of-type:first-letter {
   line-height: 0.8;
 }
 
-#ref-item-1:first-letter,
-td p:first-of-type:first-letter,
+.normal:first-letter, .normal,
+#ref-item-1, #ref-item-1:first-letter,
+td p:first-letter,
 li p a:first-of-type:first-letter {
-  font-size: initial !important;
+  font-size: inherit !important;
 }
 
 .page .section.toc li span.inner span.page, span.page {
