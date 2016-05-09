@@ -4,7 +4,7 @@
     "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
     "styles": {
         "website": "styles/website.css",
-        "ebook": "styles/ebook.css"
+        "ebook": "styles/website.css"
     },
     "plugins": [
         "anchors",
@@ -42,19 +42,13 @@
         "pageNumbers": true,
         "fontSize": 12,
         "paperSize": "letter",
-        "chapterMark": "pagebreak",
+        "chapterMark": "none",
         "pageBreaksBefore": "/",
         "margin": {
             "right": 90,
             "left": 90,
             "top": 90,
             "bottom": 90
-        },
-        "headerTemplate": "",
-        "footerTemplate": "_PAGENUM_",
-        "ebookConvertOptions": {
-            "--chapter": "/",
-            "--embed-all-fonts": true
         }
     }
 }

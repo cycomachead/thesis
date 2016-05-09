@@ -3,10 +3,8 @@
 
 <style>
  /* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-    {mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-parent:"";
+p.MsoNormal, li.MsoNormal, div.MsoNormal {
+	
     margin:0in;
     margin-bottom:.0001pt;
     font-size:12.0pt;

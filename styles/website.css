@@ -62,6 +62,11 @@ section p:first-of-type:first-letter {
   line-height: 0.8;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal img {
+  border: 1px solid #777;
+  border-radius: 2px;
+}
+
 .normal:first-letter,
 #ref-item-1:first-letter,
 td p:first-letter,
@@ -71,4 +76,13 @@ section li p:first-of-type:first-letter {
   float: none;
   margin: auto;
   line-height: unset;
+}
+
+/*
+  For the table of contents
+*/
+.page .section.toc li span.inner span.page, span.page {
+  float: left !important;
+  padding-right: 5px;
+  padding-left: 0;
 }
