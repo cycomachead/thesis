@@ -5,7 +5,8 @@ Educational design principles helped influence the design of the autograder and 
 ## Dual Modalities
 A central challenge faced when considering development of the autograder, was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. [Note ref needed?] The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
 
-A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, a program that outputs `2` instead of `2.0` might still be considered 'correct'.) While it is often possible to account for these different when writing test cases, it can be significantly difficult. We need to make sure, that when these tools are used for *grading* that they don't cause students unnecessary stress or frustrations. **FIND REFERENCES TO MARK'S WORK ON AUTOGRADERS AND MINORITIES.**
+A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors aren't careful, it's easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these different when writing test cases, it can be significantly difficult. We need to make sure, that when these tools are used for *grading* that they don't cause students unnecessary stress or frustrations. **FIND REFERENCES TO MARK'S WORK ON AUTOGRADERS AND MINORITIES.**
+
 <!--
 	Doesn't a feedback tool still suffer from this problem??
 -->
@@ -21,7 +22,7 @@ A key aspect of this tension is how to handle the idea of correctness. In an int
 	* Why do we need an autograder?
 	* Why shouldn't we have an autograder?
 		* but we did it anyway.....
-		
+
 ## "TA Centered Design"
 Though this is certainly lower on the priority list than _learner_ centered design, we make a point to describe _TA_ centered design, and why this matters for the tools we build. TAs, and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades, and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
 
@@ -29,7 +30,7 @@ In TA Centered Design, a TA is much more like a typical user in User Centered De
 
 * TAs are often lacking domain knowledge, in this case the domain is pedagogy and not computer science.
 * While TAs are motivated to _teach_ they are often not experts in the tools they are required to use to accomplish their teaching duties.
-* TAs, like almost all users, have a limited amount of time. 
+* TAs, like almost all users, have a limited amount of time.
 
 While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation, then we need to consider how TAs will use λ.
 
