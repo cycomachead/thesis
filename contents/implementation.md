@@ -2,6 +2,8 @@
 
 The λ web application is built using the Ruby on Rails framework {{ "ror" | cite }}, and makes use of many common web technologies. The Snap<em>!</em> interface is implemented purely in JavaScript. The initial purpose of the system is not to be a grade storage but to connect with an existing gradebook or Learning Management System (LMS) so that any grade results will be integrated with the rest of course data. We chose this route because, in our experience multiple sources of grades are prone to errors and delays. By designing a system which doesn't _need_ to store grade data, we can make a lot of simplifications and focus on more important features.
 
+# The Rails Backend
+
 ## The Need for a Web Application
 The JavaScript which powers the autograding works entirely client-side, meaning as long as you have the test files, there's no need for an internet connection. This path was chosen for two reasons:
 
@@ -26,7 +28,9 @@ However, we encountered several problems while developing the `JSInput` based in
 
 The one benefit of these problems was that it forced the development of the autograder into two components: A JS interface to edX, and a "dumb" client-side component that sits on top of Snap<em>!</em>. This distinction was helpful when adapting the autograder to work with the new web application.
 
-Perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. Fortunately, the
+Perhaps most importantly: the grading system could only work with edX. CS10 uses Canvas {{ "canvas" | cite }} as it's LMS, and many high schools use different systems. The need to build a custom solution for every platform would be prohibitively expensive. Fortunately, the LTI protocol provides a decent solution for most of the tasks we'd like to accomplish.
+
+At the end of the day, the decision to build an initial version tied to `JSInput` was a good one, as it was still probably faster than building a full web application at the same time.
 
 ## Basic Architecture
 λ is a Ruby on Rails "ROR" {{ "ror" | cite }} web application backed by a PostgreSQL database. The database primarily contains a set of questions, a submissions log, and a users table, as well as some additional metadata. The current version is deployed to Heroku at [lambda.cs10.org](https://lambda.cs10.org), but it could be deployed to any cloud provider.
@@ -34,7 +38,7 @@ Perhaps most importantly: the grading system could only work with edX. CS10 uses
 ### Questions and Submissions
 The core application is supported by two, fairly simple, data models: `Question`s and `Submission`s.
 
-A `Question` needs only three attributes:
+A **`Question`** needs only three attributes:
 
 * `title`: A human-readable ID for the question
 * `points`: Points are used to normalize scores. (See the LTI section below.)
@@ -45,7 +49,7 @@ Though they aren't currently used, future updates for will make use of the follo
 * `content`: Currently, it is up to course staff to provide context for the questions which are being graded. In the future, the λ will display this content alongside the Snap<em>!</em> interface.
 * `tags`: Questions can contain tags which can aid in searching, or trying to correlate student performance across problems. There is also potential for using tags to recommend problems to students as a study tool.
 
-A `Submission` has a few key properties:
+A **`Submission`** has a few key properties:
 
 * `test results` is a JSON-formatted result from the autograder. It contains the points given to each test case as well as the specific results and feedback.
 * `code submission` is a full export of the Snap<em>!</em> that students wrote.
@@ -53,13 +57,32 @@ A `Submission` has a few key properties:
 
 Note that logging submissions is purely for purposes of analysis and backup. By implementing the LTI protocol, the LMS will contain all necessary data for students to receive grades. However, if we choose to adapt λ to include resources for studying or question recommendation, the internal submissions database will become more important.
 
-### User Identities
-#### LTI
-The _IMS Global Learning Consortium_ {{ "ims" | cite }} is a standards body composed of educational instituions, intrest bodies and edtech companies. IMS publishes a specification called LTI {{ "lti" | cite }} which can briefly be described as "OAuth for educational applications".
+A **`Course`** is an object which manages the LTI connection, and needs only two values:
 
-The LTI protocol defines two "categories" of applications: a `Tool Consumer` (TC) and a `Tool Provider` (TP). λ is a provider, while the LMS is a typical consumer, in this case bCourses (Berkeley's instance of Instructure Canvas). A typical user flow involves a user in a TC clicking on a link which opens up a TP. When this link is clicked, the TC can pass a unique URL to the TP, as well as a custom user ID. This URL allows the TP to make a `POST` request with grading data.
+* `consumer_key` is a unique key for each course. This helps the application separate between different LTI consumers, primarily for purposes of analysis.
+* `consumer_secret` is a hash of the `consumer_key`. It's automatically generated by the application when a Course object is created.
+
+Note that the `Course`s table isn't entirely necessary. The LTI connection's `key` and `secret` values *could* be entirely static (i.e. in an environment configuration), but such an approach is prone to errors and has security concerns as an application is connected to multiple systems.
+
+### User Identities
+When building a tool with grading data, it was critically important that we had an easy and way to identify students, and to minimize the need for an additional login.
+
+#### LTI
+The _IMS Global Learning Consortium_ {{ "ims" | cite }} is a standards body composed of educational instituions, intrest bodies and edtech companies. IMS publishes a specification called LTI {{ "lti" | cite }} which can briefly be described as "OAuth for educational applications". The LTI authentication process is actually based on the OAuth {{ "oauth" | cite }} protocol, but it's designed to be completely seamless for students. (Unlike a Google or Facebook authorization, a student who is already authenticated inside a LMS does not need to specifically 'authorize' an application when LTI is used.)
+
+The LTI protocol defines two "categories" of applications: a `Tool Consumer` (TC) and a `Tool Provider` (TP). λ is a provider, while the LMS is a typical consumer, in this case bCourses (Berkeley's instance of Instructure Canvas). A typical user flow involves a student visiting an assignment page (inside a LMS)
+which contains either an `iframe` element or a special link. Currently, λ implements version 1.1 {{ "lti-1.1" | cite }}  of the LTI specification, though support for version 2.0 {{ "lti-2.0" | cite }}  is planned.  LTI 1.1 only allows a tool provider to read and send grades for a currently logged in student, so λ must work within this limitation. LTI 2.0 will potentially allow for more data about courses to be shared with students (such as handling parter assignments), but it so far not well supported among LMS vendors.
 
 ![When a student clicks on the link, a new tab will open with the proper question they are assigned. Clicking the "Get Feedback" button triggers a submission which sends the grade back to the LMS.](images/launch-screen.png)
+
+![A very basic LTI launch sequence. Image from the IMS {{ "ims-img" | cite }}. ](./images/ims-lti.jpg)
+
+When a user clicks the link (or an embedded `iframe` is displayed), a HTTP `POST` request is make to the provider which includes application-level configuration data (including a `consumer_key` and `consumer_secret`). The challenge is that the current version of the LTI protocol requires that this `launch_url` be the same for every assignment. (In this case the URL is `https://lambda.cs10.org/lti/sessions`.)
+After completing the OAuth handshake, the TP (our application) checks for the presence of additional configuration info passed by the TC:
+
+* If a `question_id` is provided, then λ will load the specific question. Currently LTI doesn't provide a standard interface for loading a specific resource, so if an instructor passes in this value, students will automatically be redirected to the proper question.
+* A grade passback URL is optional. If the application sees this URL, it will post a score back to the TC. If the URL is missing, then λ skips posting a score but still saves the submission to the local database.
+* User Info: 
 
 #### Need For (Regular) OAuth
 
@@ -70,8 +93,4 @@ The LTI protocol defines two "categories" of applications: a `Tool Consumer` (TC
 	* Dedicated Database
 		* Simpler JS Test
 
-
-* Lambda Walkthrough
-	* Student's Perspective
-	* Configuring An Application
-	* Writing Tests
+# The Autograder Interface
