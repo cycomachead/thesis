@@ -53,6 +53,9 @@ Both interfaces have the following features for students:
 	* This is a new option which will present the feedback of the previous tests without re-running them. This allows students to review mistakes, and should discourage "autograder driven development".
 
 ![An example of the feedback presented when everything is correct.](./images/snap-edx.png)
+
+<br />
+
 ![An example of feedback showing with some failing cases.](./images/feedback-incorrect.png)
 
 These screenshots show two different version of the autograder presenting feedback. Students see passing tests on top, in green, and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.
