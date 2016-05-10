@@ -1,6 +1,6 @@
 # Design Principles
 
-Educational design principles helped influence the design of the autograder and the direction for creation of exercises. While these design principles helped influence features and the user interface of the autograder, they are also extremely important as a guideline for how instructors and content authors should think about  writing exercises and implementing them in the classroom.
+Educational design principles helped influence the design of the autograder and the direction for creation of exercises. While these design principles helped influence features and the user interface of the autograder, they are also extremely important as a guideline for how instructors and content authors should think about writing exercises and implementing them in the classroom.
 
 ## Dual Modalities
 A central challenge faced when considering development of the autograder, was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. [Note ref needed?] The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
@@ -12,16 +12,14 @@ A key aspect of this tension is how to handle the idea of correctness. In an int
 -->
 
 ## Knowledge Integration
+- KI has 4 components (adding, distinguishing, eliciting, reflecting)
+	- Challenges: don't fit with rest of curriculum, need better collection methods
 
 ## Learner Centered Design
 
-## Constructionism + Exploration
-- Pleasantly Frustrating?
 
-* A Note About Autograding
-	* Why do we need an autograder?
-	* Why shouldn't we have an autograder?
-		* but we did it anyway.....
+## Constructionism + Exploration
+- Pleasantly Frustrating (Gee)
 
 ## "TA Centered Design"
 Though this is certainly lower on the priority list than _learner_ centered design, we make a point to describe _TA_ centered design, and why this matters for the tools we build. TAs, and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades, and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
