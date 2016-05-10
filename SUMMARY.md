@@ -12,6 +12,8 @@
 * [Design Principles](contents/design.md)
 * [Walkthrough](contents/walkthrough.md)
 * [Implementation](contents/implementation.md)
+	* [The Web Application](contents/implementation-web-app.md)
+	* [The Autograder Interface](contents/implementation-autograder.md)
 * [Experimental Setup](contents/trial.md)
 * [Results](contents/results.md)
 * [Lessons Learned](contents/lessons.md)
