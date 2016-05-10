@@ -78,13 +78,13 @@ After completing the OAuth handshake, the TP (our application) checks for the pr
 
 * If a `question_id` is provided, then λ will load the specific question. Currently LTI doesn't provide a standard interface for loading a specific resource, so if an instructor passes in this value, students will automatically be redirected to the proper question.
 * A grade passback URL is optional. If the application sees this URL, it will post a score back to the TC. If the URL is missing, then λ skips posting a score but still saves the submission to the local database.
-* User Info: 
+* User Info: If the instructional staff choose to, they can configure the LMS to send "Public" information to λ. (Public here means, what FERPA defines are directory information. In the case of UC Berkeley, this includes the student's name, email, and user ID, specifically different from their student ID. **REF?**) If the TC doesn't send public information, then it will send an obfuscated hash to identify each student. Again, this primarily only affects the analysis capabilities provided to TAs. 
 
 #### Need For (Regular) OAuth
+Unfortunately, despite the advantages of LTI, we found that traditional OAuth was still a necessary component. The primary motivation was the need for site admins, and TAs who can login without having to go through a LMS. We're using Google as an OAuth provider in addition to LTI. In the future, we would also like to connect the Snap<em>!</em> cloud account system through OAuth, but this is waiting on enhancements to the Snap<em>!</em> cloud.
+
+This feature can be useful for students as well, once we build out student dashboards. However, in order to be effective, we'll need a way to associate LTI accounts with OAuth accounts. Though not fully implemented, we will be able to automatically associate accounts for students if they share the same email address. For campuses setup like Berkeley, this will the default case for most students since their Google account and the LMS account originate from the same campus systems. If the emails don't automatically match, we should be able to provide this functionality by emailing activation codes. 
 
 ## Security Concerns
-...
-	* edX JS Input
-	* Moving to LTI
-	* Dedicated Database
-		* Simpler JS Test
+Finally, we need to discuss a significant concern about security. Currently, the autograder test files are implemented in plain JavaScript, and are served alongside the rest of the page content. This means there's a fairly gaping hole allowing for Cross-Site-Scripting (XSS) vulnerabilities. The current mitigating factor is that only trusted accounts with an admin flag can upload test cases. This is an acceptable limitation for now, but in the [Future Work](./future-work.md) chapter we describe a potential way around this by allowing test cases to be written in Snap<em>!</em>, then securely complied to JS on the serverside.
+

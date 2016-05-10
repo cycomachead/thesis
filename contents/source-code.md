@@ -2,7 +2,7 @@
 
 &nbsp; <!-- disable the big T-->
 
-The code for all projects in this report is available in various reoisitories on Github.
+The code for all projects in this report is available in various repositories on Github.
 
 * [cycomachead/lambda][] contains the main Rails web application.
 * [cycomachead/lambda-evaluator][] contains the JavaScript source that talks to Snap<em>!</em>.
@@ -18,3 +18,9 @@ The code for all projects in this report is available in various reoisitories on
 [CS10]: https://github.com/cs10
 [beautjoy]: https://github.com/beautjoy
 [bjc-edc]: https://github.com/bjc-edc
+
+The graphs in this report were generated primarily using the [blazer][blazer] gem for Rails, and this report was produced using the [GitBook][gitbook] ebook tool. You can [read it online][view].
+
+[blazer]: https://github.com/ankane/blazer
+[gitbook]: https://gitbook.com
+[view]: https://cycomachead.gitbook.com/thesis
