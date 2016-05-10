@@ -1,7 +1,6 @@
 # Summary
 
 * [Copyright](contents/copyright.md)
-* [Approvals](contents/signatures.md)
 * [Abstract](abstract.md)
 * [Acknowledgements](contents/acknowledgements.md)
 * [List of Figures](contents/figures.md)
