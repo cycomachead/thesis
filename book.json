@@ -35,7 +35,7 @@
             }
         }
     },
-    "gitbook": "3.0.0",
+    "gitbook": "3.0.0-pre.14",
     "structure": {
         "readme": "abstract.md"
     },
