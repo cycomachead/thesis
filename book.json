@@ -19,7 +19,7 @@
         "image-captions": {
             "attributes": { "width": "450" },
             "variable_name": "figures",
-            "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_",
+            "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_",
             "list_caption": "_CAPTION_",
             "images": {
                 "8.4": {
@@ -27,7 +27,7 @@
                 },
                 "8.5": {
                     "width": "600",
-                    "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
+                    "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
                 }
             }
         }
