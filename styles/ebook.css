@@ -106,6 +106,7 @@ body, p, .book p, .book div, .book {
 
 .book.font-family-0,
 h1, h2, h3, h4, h5, h6,
+h1.book-chapter,
 .book h1, .book h2, .book h3,
 .book h5, .book h5, .book h6 {
   padding-top: 0;
