@@ -1,20 +1,13 @@
 # Summary
 
-* [Copyright](contents/copyright.md)
 * [Abstract](abstract.md)
+* [Copyright](contents/copyright.md)
 * [Acknowledgements](contents/acknowledgements.md)
 * [List of Figures](contents/figures.md)
 * [Introduction](contents/introduction.md)
-
-<!--
-	* [Snap!](contents/introduction.md#snap)
-	* [BJC](contents/introduction.md#the-beauty-and-joy-of-computing)
-	* [CS10](contents/introduction.md#cs10)
--->
-
 * [Related Work](contents/related-work.md)
 * [Design Principles](contents/design.md)
-* [Walkthrough](contents/walkthrough.md)
+* [Interface Walkthrough](contents/walkthrough.md)
 * [Implementation](contents/implementation.md)
 	* [The Web Application](contents/implementation-web-app.md)
 	* [The Autograder Interface](contents/implementation-autograder.md)
@@ -22,9 +15,7 @@
 * [Results](contents/results.md)
 	* [Usage Analysis](contents/results-stats.md)
 	* [Survey Analysis](contents/results-survey.md)
-<!--
-		* [Lessons Learned](contents/lessons.md)
--->
+* [Lessons Learned](contents/lessons.md)
 * [Future Work](contents/future-work.md)
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)

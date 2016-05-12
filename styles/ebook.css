@@ -43,35 +43,66 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Freight Micro Pro' !important;
 }
 
-
 .book.font-family-1,
-body, p, .book p, .book div, .book {
-  font-family: 'Freight Text Pro' !important;
+body, p, .book {
+  font-family: 'Freight Sans Pro';
 }
 
 .book .book-body .page-wrapper .page-inner section.normal code,
 .book .book-body .page-wrapper .page-inner section.normal pre {
   font-family: 'Source Code Pro';
+  background: none;
 }
 
 section p:first-of-type:first-letter {
   font-family: 'Freight Micro Pro';
-  font-weight: normal;
-  font-size: 60px;
+  font-size: 70px;
   float: left;
   margin: 10px 10px 0 0;
   line-height: 0.8;
 }
 
-.normal:first-letter, .normal,
-#ref-item-1, #ref-item-1:first-letter,
-td p:first-letter,
-li p a:first-of-type:first-letter {
+.book .book-body .page-wrapper .page-inner section.normal img {
+  border: 1px solid #777;
+  border-radius: 2px;
+}
+
+.normal:first-of-type:first-letter,
+#ref-item-1:first-letter,
+blockquote > p:first-of-type:first-letter,
+td p:first-of-type:first-letter,
+section li p:first-of-type:first-letter {
   font-size: inherit !important;
+  font-weight: inherit;
+  float: none;
+  margin: auto;
+  line-height: unset;
+}
+
+/*
+  For the table of contents
+*/
+
+.book.font-family-0,
+h1, h2, h3, h4, h5, h6,
+.book h1, .book h2, .book h3,
+.book h5, .book h5, .book h6 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .page .section.toc li span.inner span.page, span.page {
   float: left !important;
   padding-right: 5px;
   padding-left: 0;
+}
+
+
+
+/*
+  EBOOK SPECIFIC STUFF
+*/
+.book.font-family-1,
+body, p, .book p, .book div, .book {
+  font-family: 'Freight Text Pro' !important;
 }
