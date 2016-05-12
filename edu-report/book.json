@@ -1,0 +1,56 @@
+{
+    "title": "λ - An Autograder for Snap!",
+    "author": "Michael Ball",
+    "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
+    "styles": {
+        "ebook": "ebook-edu.css"
+    },
+    "plugins": [
+        "indexes",
+        "bibtex-citation-michael"
+    ],
+    "pluginsConfig": {
+        "bibtex": {
+            "bibtex-path": "references.bib",
+            "references-url": "/references.html",
+            "format": "acm"
+        },
+        "image-captions": {
+            "attributes": { "width": "350" },
+            "variable_name": "figures",
+            "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_",
+            "list_caption": "_CAPTION_",
+            "images": {
+                "8.4": {
+                    "width": "600"
+                },
+                "8.5": {
+                    "width": "600",
+                    "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
+                }
+            }
+        }
+    },
+    "structure": {
+        "readme": "abstract.md"
+    },
+    "engine": {
+        "gitbook": "3.0.0"
+    },
+    "gitbook": ">2.0.0",
+    "pdf": {
+        "toc": true,
+        "pageNumbers": true,
+        "fontSize": 10,
+        "paperSize": "letter",
+        "chapterMark": "none",
+        "pageBreaksBefore": "/",
+        "margin": {
+            "right": 60,
+            "left": 60,
+            "top": 60,
+            "bottom": 60
+        },
+        "header": " "
+    }
+}
