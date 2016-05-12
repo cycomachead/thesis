@@ -11,13 +11,25 @@ When discussing with TAs this is almost the exact opposite of the results they i
 
 Here is a sampling of comments students gave. Each of these comments is representative of feelings of other students.
 
-	"It would save a lot of time during check off."
-	"You get to talk to an actual person! If any questions remain, they can easily be answered!"
-	"If I don't finish in class, I am more incentivized to finish it at home instead of at next lab."
-	“It worked for me, but I guess doing manual lab check-off was better, in a way, because you get feedback from the TA.”
-	“A heads-up would have been nice, as well as something explaining how to use it, but I like this feature a lot. When it works properly, it is very useful and helpful for my learning.”
-	“I don't trust it.”
-	“The autograde sometimes has bugs. For example, if my code is wrong but sometimes still reported the correct value, it would mark me as a pass.”
+> "It would save a lot of time during check off."
+
+
+> "You get to talk to an actual person! If any questions remain, they can easily be answered!"
+
+
+> "If I don't finish in class, I am more incentivized to finish it at home instead of at next lab."
+
+
+> “It worked for me, but I guess doing manual lab check-off was better, in a way, because you get feedback from the TA.”
+
+
+> “A heads-up would have been nice, as well as something explaining how to use it, but I like this feature a lot. When it works properly, it is very useful and helpful for my learning.”
+
+
+> “I don't trust it.”
+
+
+> “The autograde sometimes has bugs. For example, if my code is wrong but sometimes still reported the correct value, it would mark me as a pass.”
 
 Many students preferred the higher fidelity of in person question asking and answering. What’s interesting is that autograded checkoffs wouldn’t prevent students from getting their questions answered. Many students remarked about different levels of stress which come from automated systems or humans. While students didn’t elaborate on *why* they would be more (or less) stressed with an autograder system, the most probable answer is that such a view is really a matter of personal preference. Many students do enjoy that (human) TAs are much more relaxed and comfortable to discuss questions and generally forgiving of errors. In contrast, the autograder (currently) can only provide static responses, and is very brittle when determining correctness. However, some students also noted that they’d prefer not to talk to a TA "unless absolutely necessary" and that they found the automated format easier to deal with. We think this is yet another demonstration that a ‘one-size-fits-all’ model isn't usually the best approach.
 
@@ -33,7 +45,7 @@ The final questions that we asked mostly backup the data that was collected.
 
 ![Most students completed checkoffs alone, and found the feedback easy to interpret.](./images/survey-partner.png)
 
-![Most students reported completing work before using the autograder](./survey-uses.png)
+![Most students reported completing work before using the autograder](./images/survey-uses.png)
 
 So far these results confirm the data that's been collected. In the future, this suggests TAs can introduce the autograder to students as well as present the motivations for _how_ students should think about using it as a study tool.
 

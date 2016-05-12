@@ -55,7 +55,6 @@ body, p, .book {
 
 section p:first-of-type:first-letter {
   font-family: 'Freight Micro Pro';
-  font-weight: normal;
   font-size: 70px;
   float: left;
   margin: 10px 10px 0 0;
@@ -67,9 +66,10 @@ section p:first-of-type:first-letter {
   border-radius: 2px;
 }
 
-.normal:first-letter,
+.normal:first-of-type:first-letter,
 #ref-item-1:first-letter,
-td p:first-letter,
+blockquote > p:first-of-type:first-letter,
+td p:first-of-type:first-letter,
 section li p:first-of-type:first-letter {
   font-size: inherit !important;
   font-weight: inherit;

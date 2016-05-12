@@ -4,7 +4,7 @@ The first part of our analysis will be to look at how often and when students we
 ### Basic Statistics
 
 * Total Number of students in CS10: 169
-* Total Number of student using the autograder: 149 (86%)
+* Total Number of student using the autograder: 145 (86%)
 
 | Lab # | Oral Checkoffs | Autograder Checkoffs |
 | ------| -------------- | -------------------- |
