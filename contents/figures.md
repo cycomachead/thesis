@@ -1,5 +1,7 @@
 # List of Figures
 
+<p class="big-reset">&nbsp;</p>
+
 {% for fig in book.figures %}
-   * [{{ fig.key }}](./{{ fig.backlink | replace('md', 'html') | replace('contents', '')}}) {{ fig.list_caption }}
+   [Fig {{ fig.nro }}](./{{ fig.backlink | replace('md', 'html') | replace('contents', '')}}) {{ fig.list_caption }}
 {% endfor %}

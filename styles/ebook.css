@@ -79,6 +79,20 @@ section li p:first-of-type:first-letter {
   line-height: unset;
 }
 
+
+/*
+  EBOOK SPECIFIC STUFF
+*/
+
+.page-inner {
+  padding: 0;
+}
+
+.book.font-family-1,
+body, p, .book p, .book div, .book {
+  font-family: 'Freight Text Pro' !important;
+}
+
 /*
   For the table of contents
 */
@@ -95,14 +109,4 @@ h1, h2, h3, h4, h5, h6,
   float: left !important;
   padding-right: 5px;
   padding-left: 0;
-}
-
-
-
-/*
-  EBOOK SPECIFIC STUFF
-*/
-.book.font-family-1,
-body, p, .book p, .book div, .book {
-  font-family: 'Freight Text Pro' !important;
 }

@@ -66,6 +66,12 @@ section p:first-of-type:first-letter {
   border-radius: 2px;
 }
 
+.big-reset {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
 .normal:first-of-type:first-letter,
 #ref-item-1:first-letter,
 blockquote > p:first-of-type:first-letter,
@@ -78,11 +84,3 @@ section li p:first-of-type:first-letter {
   line-height: unset;
 }
 
-/*
-  For the table of contents
-*/
-.page .section.toc li span.inner span.page, span.page {
-  float: left !important;
-  padding-right: 5px;
-  padding-left: 0;
-}
