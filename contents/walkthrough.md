@@ -1,4 +1,4 @@
-# Walkthrough
+# Interface Walkthrough
 
 λ is composed of two parts: a webserver and a Snap<em>!</em> interface with autograding capabilities. In the current implementation, only instructors need to use the webserver, though in the future there may be functionality added for students. (See the [future work](future-work.md) section.)
 

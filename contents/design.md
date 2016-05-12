@@ -3,17 +3,23 @@
 Educational design principles helped influence the design of the autograder and the direction for creation of exercises. While these design principles helped influence features and the user interface of the autograder, they are also extremely important as a guideline for how instructors and content authors should think about writing exercises and implementing them in the classroom.
 
 ## Dual Modalities
-A central challenge faced when considering development of the autograder, was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. [Note ref needed?] The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
+A central challenge faced when considering development of the autograder, was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
 
-A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors aren't careful, it's easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these different when writing test cases, it can be significantly difficult. We need to make sure, that when these tools are used for *grading* that they don't cause students unnecessary stress or frustrations. **FIND REFERENCES TO MARK'S WORK ON AUTOGRADERS AND MINORITIES.**
+A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors aren't careful, it's easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these different when writing test cases, it can be significantly difficult. We need to make sure, that when these tools are used for *grading* that they don't cause students unnecessary stress or frustrations.
 
 <!--
 	Doesn't a feedback tool still suffer from this problem??
 -->
 
 ## Knowledge Integration
-- KI has 4 components (adding, distinguishing, eliciting, reflecting)
-	- Challenges: don't fit with rest of curriculum, need better collection methods
+Knowledge integration (KI) is a framework for approaching how students should synthesize information {{ "linn-ki" | cite }} . The KI framework has four components to orangize ideas:
+
+* **Adding Knowledge** ...
+* **Eliciting Knowledge** ...
+* **Distinguishing Knowledge** ...
+* **Reflecting** ...
+
+We used KI as a basis for writing the feedback messages that students receive.  	- Challenges: don't fit with rest of curriculum, need better collection methods
 
 ## Learner Centered Design
 
@@ -37,6 +43,6 @@ While these three ideas may seem obvious, they are important to recognize if our
 	* The [Future Work](./future-work.md) chapter describes how we can improve the experience of writing autograder test files to lower the barrier.
 * Tools need to help TAs practice good pedagogy.
 	* The admin dashboards built into λ give TAs more insights than they currently have about how students are performing and how often they are completing the lab work. While the dashboards have a ways to go in functionality, this is an improvement and gives TAs a reason to keep using the system.
-	* The test case API (described later **FIXME**) should be adapted to make it effortless to write consistent and detailed feedback. Again, the current interface for this can be improved.
+	* The test case authoring interface should be adapted to make it effortless to write consistent and detailed feedback.
 * Tools need to reduce the time spent on repetitive tasks.
 	* The ability to automatically upload grades for students is a huge time saver which allows TAs to focus on more important tasks, and allows students to stop worrying about the status of their grades.
