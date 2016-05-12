@@ -79,13 +79,20 @@ section li p:first-of-type:first-letter {
   line-height: unset;
 }
 
+.markdown-section h1, .markdown-section h2, .markdown-section h3,
+.markdown-section h4, .markdown-section h5, .markdown-section h6 {
+  margin: 0.5em 0;
+}
+
 
 /*
   EBOOK SPECIFIC STUFF
 */
 
+.book,
+.page-body,
 .page-inner {
-  padding: 0;
+  padding-top: 0;
 }
 
 .book.font-family-1,
