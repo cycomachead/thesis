@@ -37,7 +37,7 @@ Knowledge integration (KI) is a framework for approaching how students should sy
 * **Adding Knowledge** involves bringing in new ideas that students have not seen before.
 * **Eliciting Ideas** is the process of critically examining ideas students already know. 
 * **Distinguishing Knowledge** asks students to take multiple ideas and figure out how they fit together; whether they are compatible or not.
-* **Reflecting** is the process to drawing conclusions from what students have learned.
+* **Reflecting** is the process of drawing conclusions from what students have learned.
 
 We used KI as a basis for writing the feedback messages that students are shown through the autograder. The goal is to focus primarily on the eliciting knowledge and distinguishing knowledge components. We wanted to focus on these two pieces because there are many common computer science problems which can be viewed through this lens. Systematically debugging code follows a process of eliciting knowledge when trying to figure out why something is broken. Distinguishing knowledge (such as the differences between two kinds of loops, or recursion and iteration) is a natural process for programming.
 
@@ -47,7 +47,7 @@ However, writing proper KI messages proved challenging in the current setup. The
 
 
 ## "TA-Centered Design"
-Though this is certainly lower on the priority list than _learner_-centered design, we make a point to describe _TA_-centered design, and why this matters for the tools we build. TAs and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
+Though this is certainly lower on the priority list than _learner_-centered design, we make a point to describe _TA_-centered design, and why this matters for the tools we build. Teaching Assistants (TAs) and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
 
 When considering TA-Centered Design, a TA is much more like a typical user in UCD than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:
 
@@ -56,7 +56,7 @@ When considering TA-Centered Design, a TA is much more like a typical user in UC
 * Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs and grading systems such as λ.
 * TAs, like most users, have a limited amount of time to complete their work.
 
-While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation, then we need to consider how TAs will use λ.
+While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation. Then, we need to consider how TAs will use λ.
 
 * Test cases need to be easy to write and upload.
 	* The [Implementation](./implementation.md) chapter describes the problems with our initial approach using edX's tools.
