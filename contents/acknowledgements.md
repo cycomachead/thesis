@@ -10,5 +10,5 @@ In particular, a huge **Thank You** to the following people who helped make this
 * Max Dougherty, Tina Huang, Yifat Amir and Patrick O'Halloran for their incredible work on the autograder
 * Lauren Mock for all the work on BJC and CS10!
 * The CS10 staff for testing unproven technology and for dealing with additional student questions!
-	* TAs: Rachel Huang, Adam Kuphaldt, Alex McKinney, Amruta Yelamanchili, Arany Uthayakumar, Erik Dahlquist, Janna Golden, Joseph Cawthorne, Lara McConnaughey, William Tang, Yifat Amir, Andy Schmitt, Steven Traversi, Victoria Shi
-	* Instructors: Justin Hsia, Gerald Friedland
+	* TAs: Rachel Huang, Adam Kuphaldt, Alex McKinney, Amruta Yelamanchili, Arany Uthayakumar, Erik Dahlquist, Janna Golden, Joseph Cawthorne, Lara McConnaughey, William Tang, Yifat Amir, Andy Schmitt, Steven Traversi, and Victoria Shi
+	* Instructors: Justin Hsia and Gerald Friedland
