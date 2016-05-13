@@ -7,7 +7,7 @@ Snap<em>!</em> is a visual, drag-and-drop programming language inspired by MIT's
 ![An example Snap<em>!</em> program.](images/snap-basic.png)
 
 ## The Beauty and Joy of Computing
-The Beauty and Joy of Computing (BJC) is an introduction to computing designed to broaden participation among underrepresented groups. The primary language used is Snap<em>!</em>, and many of the exercises in the course have visual outputs. It covers functions and abstraction, recursion, higher order functions (lambdas) and many other topics. Many of the examples and exercises in BJC have multiple paths to implementation, which can be a challenge for autograders to handle correctly.
+The Beauty and Joy of Computing (BJC) is an introduction to computing designed to broaden participation among underrepresented groups. The primary language used is Snap<em>!</em>, and many of the exercises in the course have visual outputs. The course covers functions and abstraction, recursion, higher order functions (lambdas) and many other topics. Many of the examples and exercises in BJC have multiple paths to implementation, which can be a challenge for autograders to handle correctly.
 
 ![A typical example of BJC curriculum which includes graphical output.](images/bjc-tree.png)
 
