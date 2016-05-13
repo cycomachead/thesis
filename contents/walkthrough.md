@@ -15,8 +15,8 @@ The rest of the interest options come after the user has logged in with an admin
 These features are:
 
 * <b>Creating / Editing Questions</b> - A question contains a test file, a points value, and a starter file.
-* <b>Creating / Editing Courses</b> - Courses describe connections to the LMS. Each course has a key, and some policy settings.
-* <b>Creating / Editing Admin Dashboards</b> - Admin dashboards provide status of student performance. This initial version is based entirely on custom SQL queries, but they can be powerful. These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course. 
+* <b>Creating / Editing Courses</b> - Courses describe connections to the LMS. Each course has a key and some policy settings.
+* <b>Creating / Editing Admin Dashboards</b> - Admin dashboards provide the status of student performance. This initial version is based entirely on custom SQL queries, but they can be powerful. These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course. 
 
 ![A dashboard showing the first two labs the submission times for autograder requests for.](images/graphs-overview.png)
 
@@ -54,8 +54,8 @@ Both interfaces have the following features for students:
 
 ![An example of feedback showing with some failing cases.](./images/feedback-incorrect.png)
 
-These screenshots show two different version of the autograder presenting feedback. Students see passing tests on top, in green, and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.
+These screenshots show two different versions of the autograder presenting feedback. Students see passing tests on top in green and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.
 
 ---
 
-There will be a more thorough description the [documentation](../docs/README.md).
+There will be a more thorough description of the [documentation](../docs/README.md).
