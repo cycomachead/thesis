@@ -54,7 +54,7 @@ Both interfaces have the following features for students:
 
 ![An example of feedback showing with some failing cases.](./images/feedback-incorrect.png)
 
-These screenshots show two different versions of the autograder presenting feedback. Students see passing tests on top in green and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.
+The two screenshots in Figures 7.6 and 7.7 show two different versions of the autograder presenting feedback. Students see passing tests on top in green and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.
 
 ---
 
