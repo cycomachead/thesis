@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6,
 .book.font-family-1,
 body, p, .book p, .book div, .book {
   font-family: 'Freight Text Pro' !important;
+  line-height: 0.8;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal code,
@@ -57,7 +58,7 @@ body, p, .book p, .book div, .book {
 section p:first-of-type:first-letter {
   font-family: 'Freight Micro Pro';
   font-weight: normal;
-  font-size: 60px;
+  font-size: 50px;
   float: left;
   margin: 10px 10px 0 0;
   line-height: 0.8;

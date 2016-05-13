@@ -10,31 +10,49 @@ A key aspect of this tension is how to handle the idea of correctness. In an int
 <!--
 	Doesn't a feedback tool still suffer from this problem??
 -->
+## Learner-Centered Design
+Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "user-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by estabilishing attributes about the user's goals. For LCD there are 4 main attributes:
+
+> • Learners do not possess the same domain expertise as users.
+> • Learners are heterogeneous.
+> • Learners may not intrinsically motivated in the same manner as experts. 
+> • Learners’ understanding grows as they engage in a new work domain.
+
+While languages like Snap<em>!</em> are designed to be easier to learn, they do not necessarily employ LCD principles because they are still intended as a general-purpose programming environment. We can make sure our autograder takes into each of these principles:
+
+_Domain expertise_: Programming languages have to show error messages that could make sense in any situation. Unfortunately, this means they usually fall to the lowest common denominator type cases, and don't provide any contextual information to the use. In Snap<em>!</em> it's not uncommon to see a message that similar to `Type Error: expecting a list but got number`. We can improve upon these messages by showing students hints which are specific to the problem at hand.
+*Heterogeneity*: This is one of the harder aspects for the autograder to handle. Not everyone approaches problems in the same way. Our general approach is to try to be as lenient as possible (while still ensuring correctness) when writing test cases. We've spent lots of time considering how authors should handle different formats of output so that we try to avoid nit-picky errors. 
+*Motivation*: We try to motivate users by carefully choosing how we present the tool and the results. In class, and in the text which appears on screen we try to downplay the idea of grades or errors and instead focus on helping students improve.
+*Changing Understanding*: dynamically capturing a user's understanding is incredibly difficult to do. At this point, we aren't able to dynamically adjust exercises or feedback presented, but we have planned out possible methods for doing so. Currently, the best way for us to achieve this is to have TAs and instructors who are conscious of students needs recommend different problems for students to practice with. 
 
 ## Knowledge Integration
 Knowledge integration (KI) is a framework for approaching how students should synthesize information {{ "linn-ki" | cite }} . The KI framework has four components to orangize ideas:
 
-* **Adding Knowledge** ...
-* **Eliciting Knowledge** ...
-* **Distinguishing Knowledge** ...
-* **Reflecting** ...
+* **Adding Knowledge** involves brining in new ideas that students haven't seen before.
+* **Eliciting Ideas** is the process of critically examining ideas students already know. 
+* **Distinguishing Knowledge** asks students to take multiple ideas and figure out how they fit together; whether they are compatible or not.
+* **Reflecting** is the process to drawing conclusions from what students have learned.
 
-We used KI as a basis for writing the feedback messages that students receive.  	- Challenges: don't fit with rest of curriculum, need better collection methods
+We used KI as a basis for writing the feedback messages that students are shown through the autograder. The goal is to focus primarily on the eliciting ideas, and distinguishing ideas components. We wanted to focus on these two pieces because there are many common computer science problems which can be viewed through this lens. Systematically debugging code follows a process of eliciting ideas when trying to figure out why something is broken. Distinguishing ideas (such as the differences between two kinds of loops, or recursion and iteration) are a natural process for programming.
 
-## Learner Centered Design
+We chose not to use the *adding ideas* component because we don't currently have the autograder setup to give good feedback when students are doing exploratory work (where they would be most likely to uncover new concepts). However, these types of messages will likely appear in future versions. Similarly, while *reflecting* is a valuable step, we don't have the capability to collect nor give feedback to open-ended reflection questions.
 
+However, writing proper KI messages proved challenging in the current setup. The initial version of the autograder was designed more around presenting the results of test cases, than it was longer forms of feedback. (This is one area for improvement.) Furthermore, trying to follow KI occasionally led to messages that didn't necessarily fit within the rest of the BJC curriculum as it wasn't designed around the KI framework.
 
-## Constructionism + Exploration
+<!--
+## Exploration
 - Pleasantly Frustrating (Gee)
+-->
 
-## "TA Centered Design"
-Though this is certainly lower on the priority list than _learner_ centered design, we make a point to describe _TA_ centered design, and why this matters for the tools we build. TAs, and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades, and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
+## "TA-Centered Design"
+Though this is certainly lower on the priority list than _learner_-centered design, we make a point to describe _TA_-centered design, and why this matters for the tools we build. Teaching assistants (TAs), and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades, and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
 
-In TA Centered Design, a TA is much more like a typical user in User Centered Design (UCD) {{ "user-centered" | cite }} than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:
+When considering TA-Centered Design, a TA is much more like a typical user in User-centered Design (UCD) {{ "user-centered" | cite }} than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:
 
-* TAs are often lacking domain knowledge, in this case the domain is pedagogy and not computer science.
-* While TAs are motivated to _teach_ they are often not experts in the tools they are required to use to accomplish their teaching duties.
-* TAs, like almost all users, have a limited amount of time.
+* TAs are often lacking pedagogical content knowledge {{ "pck" | cite }} (PCK). PCK making the distinction between knowing how to program, and how to teach programming. TAs could use guidance in applying good pedagogy. 
+* While TAs are motivated to _teach_ they are not always motivated to complete the extra work required of them, such as grading or writing assignments.
+* Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs are grading systems such as λ.
+* TAs, like most users, have a limited amount of time to complete their work.
 
 While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation, then we need to consider how TAs will use λ.
 

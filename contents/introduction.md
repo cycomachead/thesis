@@ -5,7 +5,7 @@ In recent years, the field computer science (CS), and the broader technology ind
 We aim to help students learning programming by
 
  * Delivering the best resources to possible to completely remote students, and
- * Improveing the capability and efficiency of in-person teaching assistants (TAs).
+ * Improving the capability and efficiency of in-person teaching assistants (TAs).
 
 A critical example of missing resources is the capability to automatically evaluate code, and send the results to another process. Automatic evaluation, and distributing the results are central components in an _autograder_. Without an autograder, it can be difficult (if not prohibitively expensive) teach large online courses. During the 2015-2016 school year, we taught _The Beauty and Joy of Computing_ {{ "bjc" | cite }}  (BJC) as a series of four _massive open online courses_ (MOOCs) on edX {{ "edx" | cite }}. BJC is an AP CS Principles course that uses Snap<em>!</em> as its primary language. Without an autograder, we didn't think that we could fairly give credit to students online. In addition, BJC is offered at UC Berkeley as CS10 would be able to make use of an autograder for Snap<em>!</em>.
 

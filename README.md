@@ -11,10 +11,10 @@ You can view the [online version (WIP)][online].
 | Advisor  | [Dr. Dan Garcia][dan] 					|
 | Degree   | Masters of Science, Computer Science 	|
 | Emphasis | Computer Science Education				|
-| Date     | May 2016								|
+| Date     | May 13, 2016							|
 -----------------------------------------------------
 
-[GitBook]: https://gitbook.com/
+[GitBook]: https://www.gitbook.com/
 [online]: https://cycomachead.gitbooks.io/thesis/content/index.html
 [dan]: https://cs.berkeley.edu/~ddgarcia
 
