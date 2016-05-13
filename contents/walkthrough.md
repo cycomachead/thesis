@@ -14,19 +14,15 @@ The rest of the interest options come after the user has logged in with an admin
 
 These features are:
 
-* Creating / Editing Questions
-	* A question contains a test file, a points value, and a starter file.
-* Creating / Editing Courses
-	* Courses describe connections to the LMS. Each course has a key, and some policy settings.
-* Creating / Editing Admin Dashboards
-	* Admin dashboards provide status for how students are doing. This initial version is based entirely on custom SQL queries, but they can be powerful. 
-	* These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course. 
+* <b>Creating / Editing Questions</b> - A question contains a test file, a points value, and a starter file.
+* <b>Creating / Editing Courses</b> - Courses describe connections to the LMS. Each course has a key, and some policy settings.
+* <b>Creating / Editing Admin Dashboards</b> - Admin dashboards provide status of student performance. This initial version is based entirely on custom SQL queries, but they can be powerful. These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course. 
 
-![A dashboard showing the first two labs using the autograder](images/graphs-overview.png)
+![A dashboard showing the first two labs the submission times for autograder requests for.](images/graphs-overview.png)
 
 ## The Snap<em>!</em> Interface
 
-The autograder augments the Snap<em>!</em> with a few basic tools. The initial version of the autograder included a button and "hamburger" menu, that were designed to appear integrated into Snap<em>!</em>. However, the seamlessness was actually more confusing because the interface never really fit within the rest of Snap<em>!</em>.
+The autograder augments the Snap<em>!</em> interface with a few basic tools. The initial version of the autograder included a button and "hamburger" menu, that were designed to appear integrated into Snap<em>!</em>. However, the seamlessness was actually more confusing because the implementation never really fit within the rest of Snap<em>!</em>.
 
 ![The initial (edX) version which had a heavily integrated feedback button.](images/edx-controls.png)
 
@@ -50,7 +46,7 @@ Both interfaces have the following features for students:
 * Help
 	* Displays a set of tool tips over autograder-specific elements. 
 * Show Previous Results
-	* This is a new option which will present the feedback of the previous tests without re-running them. This allows students to review mistakes, and should discourage "autograder driven development".
+	* This is a new option which will present the feedback of the previous tests without re-running them. This allows students to review mistakes, and should discourage "autograder-driven development".
 
 ![An example of the feedback presented when everything is correct.](./images/snap-edx.png)
 
