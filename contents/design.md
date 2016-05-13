@@ -51,9 +51,9 @@ Though this is certainly lower on the priority list than _learner_-centered desi
 
 When considering TA-Centered Design, a TA is much more like a typical user in UCD than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:
 
-* TAs are often lacking pedagogical content knowledge (PCK). PCK making the distinction between knowing how to program, and how to teach programming. TAs could use guidance in applying good pedagogy. 
+* TAs are often lacking pedagogical content knowledge (PCK). PCK is making the distinction between knowing how to program, and how to teach programming. TAs could use guidance in applying good pedagogy. 
 * While TAs are motivated to _teach_ they are not always motivated to complete the extra work required of them, such as grading or writing assignments.
-* Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs are grading systems such as λ.
+* Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs and grading systems such as λ.
 * TAs, like most users, have a limited amount of time to complete their work.
 
 While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation, then we need to consider how TAs will use λ.
