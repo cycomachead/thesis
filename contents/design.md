@@ -3,21 +3,21 @@
 Educational design principles helped influence the design of the autograder and the direction for creation of exercises. While these design principles helped influence features and the user interface of the autograder, they are also extremely important as a guideline for how instructors and content authors should think about writing exercises and implementing them in the classroom.
 
 ## Dual Modalities
-A central challenge faced when considering development of the autograder, was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
+A central challenge faced when considering development of the autograder was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
 
-A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors aren't careful, it's easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these different when writing test cases, it can be significantly difficult. We need to make sure, that when these tools are used for *grading* that they don't cause students unnecessary stress or frustrations.
+A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors are not careful, it is easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these differences when writing test cases, it can be significantly difficult. We need to make sure that when these tools are used for *grading*, they do not cause students unnecessary stress or frustrations.
 
 <!--
 	Doesn't a feedback tool still suffer from this problem??
 -->
 ## Learner-Centered Design
-Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "user-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by estabilishing attributes about the user's goals. For LCD there are 4 main attributes:
+Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "user-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by establishing attributes about the user's goals. For LCD there are 4 main attributes:
 
 > • Learners do not possess the same domain expertise as users.
 
 > • Learners are heterogeneous.
 
-> • Learners may not intrinsically motivated in the same manner as experts. 
+> • Learners may not be intrinsically motivated in the same manner as experts. 
 
 > • Learners’ understanding grows as they engage in a new work domain.
 
