@@ -2,7 +2,7 @@
 {% include "./intro-short.md" %}
 
 ## Snap<em>!</em>
-Snap<em>!</em> is inspired by MIT's Scratch {{ "scratch" | cite }}, but adapted for university-level courses by including features such as first-class lists and functions. Snap<em>!</em> is a visual, drag-and-drop programming languag and implemented as a web application in Javascript. 
+Snap<em>!</em> is inspired by MIT's Scratch {{ "scratch" | cite }}, but adapted for university-level courses by including features such as first-class lists and functions. Snap<em>!</em> is a visual, drag-and-drop programming language and implemented as a web application in Javascript. 
 
 ![An example Snap<em>!</em> program.](images/snap-basic.png)
 
