@@ -11,7 +11,7 @@ A key aspect of this tension is how to handle the idea of correctness. In an int
 	Doesn't a feedback tool still suffer from this problem??
 -->
 ## Learner-Centered Design
-Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "user-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by estabilishing attributes about the user's goals. For LCD there are 4 main attributes:
+Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by estabilishing attributes about the user's goals. For LCD there are 4 main attributes:
 
 > • Learners do not possess the same domain expertise as users.
 
@@ -29,7 +29,7 @@ _Domain expertise_: Programming languages have to show error messages that could
 *Changing Understanding*: dynamically capturing a user's understanding is incredibly difficult to do. At this point, we aren't able to dynamically adjust exercises or feedback presented, but we have planned out possible methods for doing so. Currently, the best way for us to achieve this is to have TAs and instructors who are conscious of students needs recommend different problems for students to practice with. 
 
 ## Knowledge Integration
-Knowledge integration (KI) is a framework for approaching how students should synthesize information {{ "linn-ki" | cite }} . The KI framework has four components to orangize ideas:
+Knowledge integration (KI) is a framework for approaching how students should synthesize information. The KI framework has four components to organize ideas:
 
 * **Adding Knowledge** involves brining in new ideas that students haven't seen before.
 * **Eliciting Ideas** is the process of critically examining ideas students already know. 
@@ -56,10 +56,7 @@ When considering TA-Centered Design, a TA is much more like a typical user in UC
 While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation, then we need to consider how TAs will use λ.
 
 * Test cases need to be easy to write and upload.
-	* The [Implementation](./implementation.md) chapter describes the problems with our initial approach using edX's tools.
-	* The [Future Work](./future-work.md) chapter describes how we can improve the experience of writing autograder test files to lower the barrier.
 * Tools need to help TAs practice good pedagogy.
-	* The admin dashboards built into λ give TAs more insights than they currently have about how students are performing and how often they are completing the lab work. While the dashboards have a ways to go in functionality, this is an improvement and gives TAs a reason to keep using the system.
 	* The test case authoring interface should be adapted to make it effortless to write consistent and detailed feedback.
 * Tools need to reduce the time spent on repetitive tasks.
 	* The ability to automatically upload grades for students is a huge time saver which allows TAs to focus on more important tasks, and allows students to stop worrying about the status of their grades.

@@ -6,8 +6,8 @@
         "ebook": "ebook-edu.css"
     },
     "plugins": [
-        "indexes",
-        "bibtex-citation-michael"
+        "bibtex-citation-michael",
+        "image-captions"
     ],
     "pluginsConfig": {
         "bibtex": {
@@ -18,29 +18,16 @@
         "image-captions": {
             "attributes": { "width": "350" },
             "variable_name": "figures",
-            "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_",
-            "list_caption": "_CAPTION_",
-            "images": {
-                "8.4": {
-                    "width": "600"
-                },
-                "8.5": {
-                    "width": "600",
-                    "caption": "<strong>Figure _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
-                }
-            }
+            "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_",
+            "list_caption": "_CAPTION_"
         }
     },
     "structure": {
-        "readme": "abstract.md"
+        "readme": "intro.md"
     },
-    "engine": {
-        "gitbook": "3.0.0"
-    },
-    "gitbook": "3.0.0",
     "pdf": {
         "toc": true,
-        "pageNumbers": true,
+        "pageNumbers": false,
         "fontSize": 10,
         "paperSize": "letter",
         "chapterMark": "none",
@@ -48,9 +35,10 @@
         "margin": {
             "right": 60,
             "left": 60,
-            "top": 60,
-            "bottom": 60
+            "top": 54,
+            "bottom": 54
         },
-        "header": " "
+        "headerContent": " ",
+        "footerContent": " "
     }
 }
