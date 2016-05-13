@@ -4,7 +4,10 @@
     "description": "An autograder for the Snap! programming language, my UC Berkeley Masters' Thesis.",
     "plugins": [
         "bibtex-citation-michael",
-        "image-captions"
+        {
+            "name": "image-captions",
+            "version": "git+https://github.com/todvora/gitbook-plugin-image-captions.git"
+        }
     ],
     "pluginsConfig": {
         "theme-default": {
