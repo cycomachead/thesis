@@ -9,7 +9,10 @@
             "version": "git+https://github.com/todvora/gitbook-plugin-image-captions.git"
         }
     ],
-    "gitbook": ">=3.0.0-pre.0",
+    "styles": {
+      "pdf": "styles/ebook.css"
+    },
+    "gitbook": ">=3.1.0",
     "pluginsConfig": {
         "theme-default": {
             "showLevel": true
@@ -44,6 +47,7 @@
     "pdf": {
         "toc": true,
         "pageNumbers": true,
+        "fontFamily": "Times New Roman",
         "fontSize": 12,
         "paperSize": "letter",
         "margin": {
