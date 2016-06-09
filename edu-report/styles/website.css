@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Freight Micro Pro';
+  src: url('./Freight/FreigMicProBook.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freight Micro Pro';
+  src: url('./Freight/FreigMicProMed.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face { /* All Serif Elements */
+  font-family: 'Freight Text Pro';
+  src: url('./Freight/FreightTextProBook.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Freight Text Pro';
+  src: url('./Freight/FreightTextProBookIt.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Freight Sans Pro';
+  src: url('./Freight/FreigSanProBook.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+figure {
+  text-align: center;
+}
+
+.book.font-family-0,
+h1, h2, h3, h4, h5, h6,
+.book h1, .book h2, .book h3,
+.book h5, .book h5, .book h6 {
+  font-family: 'Freight Micro Pro' !important;
+}
+
+.book.font-family-1,
+body, p, .book {
+  font-family: 'Freight Sans Pro';
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  font-family: 'Source Code Pro';
+}
+
+section p:first-of-type:first-letter {
+  font-family: 'Freight Micro Pro';
+  font-size: 70px;
+  float: left;
+  margin: 10px 10px 0 0;
+  line-height: 0.8;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal img {
+  border: 1px solid #777;
+  border-radius: 2px;
+}
+
+.big-reset {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.normal:first-of-type:first-letter,
+#ref-item-1:first-letter,
+blockquote > p:first-of-type:first-letter,
+td p:first-of-type:first-letter,
+section li p:first-of-type:first-letter {
+  font-size: inherit !important;
+  font-weight: inherit;
+  float: none;
+  margin: auto;
+  line-height: unset;
+}
+
+.markdown-section h1, .markdown-section h2, .markdown-section h3,
+.markdown-section h4, .markdown-section h5, .markdown-section h6 {
+  margin: 0.5em 0;
+}
