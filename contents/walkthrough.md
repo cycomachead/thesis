@@ -18,7 +18,7 @@ These features are:
 * <b>Creating / Editing Courses</b> - Courses describe connections to the LMS. Each course has a key and some policy settings (figure 6).
 * <b>Creating / Editing Admin Dashboards</b> - Admin dashboards provide the status of student performance. This initial version is based entirely on custom SQL queries, but they can be powerful. These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course (figure 7).
 
-[Creating a new course is a simple action which requires little information.](images/lti-new-course.png)
+![Creating a new course is a simple action which requires little information.](images/lti-new-course.png)
 
 ![A dashboard showing the first two labs the submission times for autograder requests for.](images/graphs-overview.png)
 
