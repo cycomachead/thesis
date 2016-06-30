@@ -6,6 +6,10 @@ Educational design principles helped influence the design of the autograder and 
 A central challenge faced when considering development of the autograder was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
 
 A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors are not careful, it is easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these differences when writing test cases, it can be significantly difficult. We need to make sure that when these tools are used for *grading*, they do not cause students unnecessary stress or frustration.
+<!--
+	Mark's facebook comment should be here.
+-->
+
 
 <!--
 	Doesn't a feedback tool still suffer from this problem??
@@ -17,7 +21,7 @@ Learner-centered design (LCD) is a design principle adapted from user-centered-d
 
 > • Learners are heterogeneous.
 
-> • Learners may not be intrinsically motivated in the same manner as experts. 
+> • Learners may not be intrinsically motivated in the same manner as experts.
 
 > • Learners’ understanding grows as they engage in a new work domain.
 
@@ -29,13 +33,13 @@ _Domain expertise_: Programming languages have to show error messages that could
 
 *Motivation*: We try to motivate users by carefully choosing how we present the tool and the results. In class, and in the text which appears on screen we try to downplay the idea of grades or errors and instead focus on helping students improve.
 
-*Changing Understanding*: Dynamically capturing a user's understanding is incredibly difficult to do. At this point, we are not able to dynamically adjust exercises or feedback presented, but we have planned out possible methods for doing so. Currently, the best way for us to achieve this is to have Teaching Assistants (TAs) and instructors, who are conscious of students needs, recommend different problems for students to practice with. 
+*Changing Understanding*: Dynamically capturing a user's understanding is incredibly difficult to do. At this point, we are not able to dynamically adjust exercises or feedback presented, but we have planned out possible methods for doing so. Currently, the best way for us to achieve this is to have Teaching Assistants (TAs) and instructors, who are conscious of students needs, recommend different problems for students to practice with.
 
 ## Knowledge Integration
 Knowledge integration (KI) is a framework for approaching how students should synthesize information {{ "linn-ki" | cite }} . The KI framework has four components to orangize ideas:
 
 * **Adding Knowledge** involves bringing in new ideas that students have not seen before.
-* **Eliciting Ideas** is the process of critically examining ideas students already know. 
+* **Eliciting Ideas** is the process of critically examining ideas students already know.
 * **Distinguishing Knowledge** asks students to take multiple ideas and figure out how they fit together; whether they are compatible or not.
 * **Reflecting** is the process of drawing conclusions from what students have learned.
 
@@ -51,18 +55,18 @@ Though this is certainly lower on the priority list than _learner_-centered desi
 
 When considering TA-Centered Design, a TA is much more like a typical user in UCD than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:
 
-* TAs are often lacking pedagogical content knowledge (PCK). PCK is making the distinction between knowing how to program, and how to teach programming. TAs could use guidance in applying good pedagogy. 
-* While TAs are motivated to _teach_ they are not always motivated to complete the extra work required of them, such as grading or writing assignments.
-* Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs and grading systems such as λ.
-* TAs, like most users, have a limited amount of time to complete their work.
-
-While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond the initial implementation. Then, we need to consider how TAs will use λ.
-
-* Test cases need to be easy to write and upload.
-	* The [Implementation](./implementation.md) chapter describes the problems with our initial approach using edX's tools.
-	* The [Future Work](./future-work.md) chapter describes how we can improve the experience of writing autograder test files to lower the barrier.
-* Tools need to help TAs practice good pedagogy.
+* TAs are often lacking pedagogical content knowledge (PCK). PCK is making the distinction between knowing how to program, and how to teach programming. TAs could use guidance in applying good pedagogy.
 	* The admin dashboards built into λ give TAs more insights than they currently have about how students are performing and how often they are completing the lab work. While the dashboards have a ways to go in functionality, this is an improvement and gives TAs a reason to keep using the system.
 	* The test case authoring interface should be adapted to make it effortless to write consistent and detailed feedback.
-* Tools need to reduce the time spent on repetitive tasks.
+* While TAs are motivated to _teach_ they are not always motivated to complete the extra work required of them, such as grading or writing assignments.
+	* Test cases need to be easy to write and upload.
+		* The [Implementation](./implementation.md) chapter describes the problems with our initial approach using edX's tools.
+		* The [Future Work](./future-work.md) chapter describes how we can improve the experience of writing autograder test files to lower the barrier.
+* Often TAs are not experts in the tools they are required to use to accomplish their teaching duties, such as LMSs and grading systems such as λ.
+* TAs, like most users, have a limited amount of time to complete their work.
+	* Limit (or automate) repetitive tasks, especially ones that involve configuration.
 	* The ability to automatically upload grades for students is a huge time saver which allows TAs to focus on more important tasks, and allows students to stop worrying about the status of their grades.
+
+While these three ideas may seem obvious, they are important to recognize if our work is to be used beyond our initial test implementation. Then, we need to consider how TAs will use λ. The success of a new autograder, even if it is beneficial for students requires TAs to be comfortable configuring and writing new autograder tests.
+
+Ultimately, we're are trying to recognize that TA's (or individual instructors) are already limited by time. Making test cases as easy to write as possible is a necessary part of the process.
