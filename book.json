@@ -29,10 +29,10 @@
             "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_",
             "list_caption": "_CAPTION_",
             "images": {
-                "8.4": {
+                "1.8.4": {
                     "width": "600"
                 },
-                "8.5": {
+                "1.8.5": {
                     "width": "600",
                     "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
                 },
