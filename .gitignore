@@ -7,6 +7,8 @@
 node_modules/*
 # Currently track the bibTeX one
 !node_modules/gitbook-plugin-bibtex-citation-michael
+!node_modules/gitbook-plugin-image-captions
+
 
 # GitBook's output dir
 _book
