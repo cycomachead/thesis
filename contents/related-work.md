@@ -5,7 +5,7 @@ In building and designing an autograder, there is surprisingly little work publi
 ## Code.org CodeStudio
 Code.org's CodeStudio {{ "code-studio" | cite }} is an online interactive environment based around the open-source Blockly environment {{ "blockly" | cite }}.  CodeStudio includes custom feedback, but the vast majority of the problems are in a highly restrictive space where students are given only a limited set of blocks. While CodeStudio is open source {{ "code-studio-github" | cite }}, the autograder and feedback methodologies are not documented.
 
-![A typical example of a CodeStudio problem that gives students only a few blocks to work with, and has a fairly constrained solution space.](images/blockly-example.png)
+![A typical example of a CodeStudio problem that gives students only a few blocks to work with, and has a fairly constrained solution space.](/images/blockly-example.png)
 
 ## ITCH: Individual Testing of Computer Homework for Scratch Assignments
 

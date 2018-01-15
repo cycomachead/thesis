@@ -22,7 +22,7 @@ Note this data has some anomalies due to bug in the initial setup, and confusion
 
 We can look at the number of times that students tried the autograder:
 
-![Number of students by number of questions attempted](images//questions-attempted-num-of-students.png)
+![Number of students by number of questions attempted](/images//questions-attempted-num-of-students.png)
 
 What this shows us is that, though students were only required to complete one lab using the autograder, nearly 2/3 (93/149) found the autograder compelling enough to try a second time. From talking to students and staff, a portion of the drop off in students using the autograder may be due to the fact that the autograder doesn't handle pairs of students. Given that the later labs are some of the more difficult, many students may choose to work in pairs.
 
@@ -31,19 +31,19 @@ The second thing to look at is _when_ students are submitting their work. While 
 
 These charts show the overall submission times for each of the three labs. The red bar indicates the date that the lab was due for full credit.
 
-![Lab 11: submission times by day.](images//SS Lab 11.png)
+![Lab 11: submission times by day.](/images//SS Lab 11.png)
 
-![Lab 12: submission times by day.](images//SS Lab 12.png)
+![Lab 12: submission times by day.](/images//SS Lab 12.png)
 
-![Lab 14: submission times by day.](images//SS Lab 14.png)
+![Lab 14: submission times by day.](/images//SS Lab 14.png)
 
 These graphs don't reveal anything too surprising. For the most part, students are using the autograder to complete labs at the same pace they normally would.
 
 We can look at the days of the week as well as the time of day to see when students are working on labs. Normal lab times are usually between 9:00-19:00, though this varies by the day of the week.
 
-![Number of autograder submissions by hour of the day.](images//SS Labs By Hour.png)
+![Number of autograder submissions by hour of the day.](/images//SS Labs By Hour.png)
 
-![Number of autograder submissions by day of the week.](images//labs-day-of-week.png)
+![Number of autograder submissions by day of the week.](/images//labs-day-of-week.png)
 
 Again, these graphs are fairly close to what course staff would expect. Most students are continuing to complete labs during their scheduled time, but a significant number are working at home.
 
@@ -59,11 +59,11 @@ Naturally, this might lead one to question the value of oral lab checkoffs. That
 ## Submission Patterns
 We can also look at how often students attempt each question. This shows whether students are using the autograder more as a feedback tool, as a crutch or as simply a credit mechanism. While there's no clear exact number of times a student should use submit their work, it's clear that we want an overall 'happy-medium'.
 
-![Most students appear to only submit once at the end of their work.](images//num-students-times-submitted.png)
+![Most students appear to only submit once at the end of their work.](/images//num-students-times-submitted.png)
 
 The data show that most students appear to be submitting only once, meaning they're not currently getting much benefit by the feedback presented. If there were more feedback presented, or potentially more challenging questions this might change. Though not yet implemented, non-graded feedback such as code quality suggestions might change the way students work to use the autograder.
 
-![Number of students by number of times submitted for each lab.](images//submissions-count-combined.png)
+![Number of students by number of times submitted for each lab.](/images//submissions-count-combined.png)
 
 These results also how a really long tail for the number of submissions by some students. This is to be expected with any autograder. However, from looking at the data, and from TA reports many of these high submission numbers may be due to the previously mentioned bugs. (Students tried submitting many times simply hoping that the errors would disappear.)
 

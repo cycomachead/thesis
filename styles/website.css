@@ -63,12 +63,12 @@ section li p:first-of-type:first-letter {
 
 .figure-y-axis {
   display: inline-block;
-  position: relative;
 }
 
 .figure-x-axis {
+  text-align: center;
 }
-/*
+
 .figure-y-axis ~ figcaption {
   margin-left: 3em;
-}*/
+}

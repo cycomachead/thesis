@@ -79,13 +79,18 @@ h1.book-chapter,
   padding-left: 0;
 }
 
-.figure-x-axis, .figure-y-axis {
+.figure-x-axis,
+.figure-y-axis {
   font-weight: bold;
   font-size: 0.9em;
 }
 
 .figure-y-axis {
   display: inline-block;
+}
+
+.figure-x-axis {
+  text-align: center;
 }
 
 .figure-y-axis ~ figcaption {

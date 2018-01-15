@@ -12,7 +12,7 @@ While the entirely client-side path was a good decision, we ran into a number of
 ### Challenges with `JSInput`
 edX's `JSInput` problem type provides a JavaScript API for sending scores to the edX platform. It allows us to build in a custom version of Snap<em>!</em> alongside the rest of the content in edX.
 
-![Snap! can be embedded in edX through JSInput.](images/snap-edx.png)
+![Snap! can be embedded in edX through JSInput.](/images/snap-edx.png)
 
 However, we encountered several problems while developing the `JSInput` based integration:
 
@@ -69,9 +69,9 @@ The _IMS Global Learning Consortium_ {{ "ims" | cite }} is a standards body comp
 The LTI protocol defines two "categories" of applications: a `Tool Consumer` (TC) and a `Tool Provider` (TP). λ is a provider, while the LMS is a typical consumer, in this case bCourses (Berkeley's instance of Instructure Canvas). A typical user flow involves a student visiting an assignment page (inside a LMS)
 which contains either an `iframe` element or a special link. Currently, λ implements version 1.1 {{ "lti-1.1" | cite }}  of the LTI specification, though support for version 2.0 {{ "lti-2.0" | cite }}  is planned.  LTI 1.1 only allows a tool provider to read and send grades for a currently logged in student, so λ must work within this limitation. LTI 2.0 will potentially allow for more data about courses to be shared with students (such as handling parter assignments), but it so far not well supported among LMS vendors.
 
-![When a student clicks on the link, a new tab will open with the proper question they are assigned. Clicking the "Get Feedback" button triggers a submission which sends the grade back to the LMS.](images/launch-screen.png)
+![When a student clicks on the link, a new tab will open with the proper question they are assigned. Clicking the "Get Feedback" button triggers a submission which sends the grade back to the LMS.](/images/launch-screen.png)
 
-![A very basic LTI launch sequence. Image from the IMS {{ "ims-img" | cite }}. ](images//ims-lti.jpg)
+![A very basic LTI launch sequence. Image from the IMS {{ "ims-img" | cite }}. ](/images//ims-lti.jpg)
 
 When a user clicks the link (or an embedded `iframe` is displayed), a HTTP `POST` request is make to the provider which includes application-level configuration data (including a `consumer_key` and `consumer_secret`). The challenge is that the current version of the LTI protocol requires that this `launch_url` be the same for every assignment. (In this case the URL is `https://lambda.cs10.org/lti/sessions`.)
 After completing the OAuth handshake, the TP (our application) checks for the presence of additional configuration info passed by the TC:

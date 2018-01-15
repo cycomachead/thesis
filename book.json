@@ -35,13 +35,15 @@
                 "8.5": {
                     "width": "600",
                     "caption": "<strong>Figure _BOOK_IMAGE_NUMBER_:</strong> _CAPTION_ (Greyed out items mean that the user hasn't done something to enable that action.)"
+                },
+                "1.11.1.1": {
+                    "x-axis": "Number of Submissions",
+                    "y-axis": "Number of Students"
                 }
             }
         }
     },
-    "variables": {
-        "TEST": "hello"
-    },
+    "variables": {},
     "structure": {
         "readme": "abstract.md"
     },
