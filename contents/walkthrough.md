@@ -18,7 +18,7 @@ These features are:
 * <b>Creating / Editing Courses</b> - Courses describe connections to the LMS. Each course has a key and some policy settings (figure 6).
 * <b>Creating / Editing Admin Dashboards</b> - Admin dashboards provide the status of student performance. This initial version is based entirely on custom SQL queries, but they can be powerful. These dashboards were a significant benefit in doing analysis for this report and were shared with TAs during the course (figure 7).
 
-![Creating a new course is a simple action which requires little information.](images/lti-new-course.png)
+![Creating a new course is a simple action which requires little information.](images/docs/lti-new-course.png)
 
 ![A dashboard showing the first two labs the submission times for autograder requests for.](images/graphs-overview.png)
 
@@ -50,10 +50,10 @@ Both interfaces have the following features for students:
 * *Show Previous Results*
 	* This is a new option which will present the feedback of the previous tests without re-running them. This allows students to review mistakes, and should discourage "autograder-driven development".
 
-![An example of the feedback presented when everything is correct.](./images/snap-edx.png)
+![An example of the feedback presented when everything is correct.](images/snap-edx.png)
 
 <br />
 
-![An example of feedback showing some failing cases.](./images/feedback-incorrect.png)
+![An example of feedback showing some failing cases.](images//feedback-incorrect.png)
 
 The two screenshots in Figures 7.6 and 7.7 show two different versions of the autograder presenting feedback. Students see passing tests on top in green and failing tests on the bottom in red. Each section has details about the particular test cases, and the bold headings can contain tips or guidance for students.

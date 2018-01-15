@@ -71,7 +71,7 @@ which contains either an `iframe` element or a special link. Currently, λ imple
 
 ![When a student clicks on the link, a new tab will open with the proper question they are assigned. Clicking the "Get Feedback" button triggers a submission which sends the grade back to the LMS.](images/launch-screen.png)
 
-![A very basic LTI launch sequence. Image from the IMS {{ "ims-img" | cite }}. ](./images/ims-lti.jpg)
+![A very basic LTI launch sequence. Image from the IMS {{ "ims-img" | cite }}. ](images//ims-lti.jpg)
 
 When a user clicks the link (or an embedded `iframe` is displayed), a HTTP `POST` request is make to the provider which includes application-level configuration data (including a `consumer_key` and `consumer_secret`). The challenge is that the current version of the LTI protocol requires that this `launch_url` be the same for every assignment. (In this case the URL is `https://lambda.cs10.org/lti/sessions`.)
 After completing the OAuth handshake, the TP (our application) checks for the presence of additional configuration info passed by the TC:

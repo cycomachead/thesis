@@ -5,7 +5,7 @@ Along with the data we collected, we surveyed students at two points to get feed
 ## Midterm Feedback
 The first question we asked students was whether they preferred online lab checkoffs or oral lab checkoffs. 
 
-![Students are fairly evenly split between preferring online vs oral lab checkoffs.](./images/survey-preferences.png)
+![Students are fairly evenly split between preferring online vs oral lab checkoffs.](images//survey-preferences.png)
 
 When discussing with TAs this is almost the exact opposite of the results they initially expected. TAs (and instructors, including from other courses) expected almost all students to prefer using the autograder to getting checked off orally. (Ratios some staff suggested were 75/25, 80/20, 90/10 in favor of an autograder. While no one had exactly the same prediction, everyone we spoke to assumed >= 70% students would prefer an autograder.) This validates that we have done a pretty good job in designing and tweaking the oral lab checkoff system (which has evolved over the past few year), but also that students like talking to TAs and that students are not simply trying to beat the system. Instructional staff had concerns about students preferences, because many assumed that the autograder would be the path of least resistance for students. It's worth noting, however that part of the bias towards in-person over online checkoffs could very likely be attributed to bugs in the system early on, but this is still a promising result. (Many open-ended feedback comments mentioned bugs or glitches as a reason for the feelings about the autograder.)
 
@@ -43,9 +43,9 @@ When asked for feedback specific to the autograder, students seemed more positiv
 
 The final questions that we asked mostly backup the data that was collected.
 
-![Most students completed checkoffs alone, and found the feedback easy to interpret.](./images/survey-partner.png)
+![Most students completed checkoffs alone, and found the feedback easy to interpret.](images//survey-partner.png)
 
-![Most students reported completing work before using the autograder](./images/survey-uses.png)
+![Most students reported completing work before using the autograder](images//survey-uses.png)
 
 So far these results confirm the data that's been collected. In the future, this suggests TAs can introduce the autograder to students as well as present the motivations for _how_ students should think about using it as a study tool.
 

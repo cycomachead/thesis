@@ -1,37 +1,3 @@
-@font-face {
-  font-family: 'Freight Micro Pro';
-  src: url('./Freight/FreigMicProBook.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Freight Micro Pro';
-  src: url('./Freight/FreigMicProMed.otf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face { /* All Serif Elements */
-  font-family: 'Freight Text Pro';
-  src: url('./Freight/FreightTextProBook.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Freight Text Pro';
-  src: url('./Freight/FreightTextProBookIt.otf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Freight Sans Pro';
-  src: url('./Freight/FreigSanProBook.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 figure {
   text-align: center;
 }
@@ -88,3 +54,21 @@ section li p:first-of-type:first-letter {
 .markdown-section h4, .markdown-section h5, .markdown-section h6 {
   margin: 0.5em 0;
 }
+
+.figure-x-axis,
+.figure-y-axis {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.figure-y-axis {
+  display: inline-block;
+  position: relative;
+}
+
+.figure-x-axis {
+}
+/*
+.figure-y-axis ~ figcaption {
+  margin-left: 3em;
+}*/

@@ -18,5 +18,5 @@
 * [Future Work](contents/future-work.md)
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)
-* [Appendix A: Documentation](docs/README.md)
-* [Appendix B: Source Code](contents/source-code.md)
+<!-- * [Appendix A: Documentation](docs/README.md) -->
+* [Appendix A: Source Code](contents/source-code.md)
