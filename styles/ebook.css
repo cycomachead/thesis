@@ -69,6 +69,39 @@ section li p:first-of-type:first-letter {
   color: #000;
 }
 
+.inner {
+/*  max-width: 100%;
+*/}
+
+.page .section.toc li span.inner span.page,
+span.page {
+  float: left !important;
+  padding-right: 5px;
+  padding-left: 0;
+}
+
+.toc-title {
+/*  float: left;*/
+/*  width: 300px;
+*/  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page-number {
+  float: right;
+/*  width: 50px;
+*/  overflow: hidden;
+}
+
+/*.toc-item .toc-title:after {
+  content: " ........................................................................................................";
+}
+*/
+.section h1 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
 .book.font-family-0,
 h1, h2, h3, h4, h5, h6,
 h1.book-chapter,
@@ -76,12 +109,6 @@ h1.book-chapter,
 .book h5, .book h5, .book h6 {
   padding-top: 0;
   margin-top: 0;
-}
-
-.page .section.toc li span.inner span.page, span.page {
-  float: left !important;
-  padding-right: 5px;
-  padding-left: 0;
 }
 
 .figure-x-axis,

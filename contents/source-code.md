@@ -1,4 +1,4 @@
-# {{ page.level }} Obtaining the Source Code
+# Appendix A: Obtaining the Source Code
 
 &nbsp; <!-- disable the big T-->
 
