@@ -2,7 +2,7 @@
 
 <div style="display:none">
 <p>&nbsp;</p><!-- disable the big T-->
-</div> 
+</div>
 
 {% references %}
 {% endreferences %}
