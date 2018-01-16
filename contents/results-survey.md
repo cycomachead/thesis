@@ -1,8 +1,8 @@
-# Survey Feedback & Analysis
+# {{ page.level }} Survey Feedback & Analysis
 
 Along with the data we collected, we surveyed students at two points to get feedback about their use of the autograder. The first survey occurred during the CS10 midterm, shortly after students should have completed labs 11 and 12. The second survey was given along with the final exam, at the end of the semester.
 
-## Midterm Feedback
+## {{ page.level }}.1 Midterm Feedback
 The first question we asked students was whether they preferred online lab checkoffs or oral lab checkoffs. 
 
 ![Students are fairly evenly split between preferring online vs oral lab checkoffs.](/images//survey-preferences.png)
@@ -35,7 +35,7 @@ Many students preferred the higher fidelity of in person question asking and ans
 
 When we asked for general feedback about the tool, most of the comments were that it was confusing to use. This is understandable, because in retrospect there was not enough documentation nor TA trailing before the autograder was launched in class. Fortunately, this is a fairly easy problem to address for future semesters.
 
-## Final Survey Feedback
+## {{ page.level }}.2 Final Survey Feedback
 
 One promising result, is that we asked students for feedback on the overall use of lab checkoffs. While there is (not surprisingly) a large contingent of students who dislike the lab checkoffs, most of the students in support of checkoffs specifically asked for more autograder questions. 
 

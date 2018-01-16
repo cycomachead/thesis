@@ -1,7 +1,7 @@
 # Summary
 
+<!-- * [Copyright](contents/copyright.md) -->
 * [Abstract](abstract.md)
-* [Copyright](contents/copyright.md)
 * [Acknowledgements](contents/acknowledgements.md)
 * [List of Figures](contents/figures.md)
 * [Introduction](contents/introduction.md)

@@ -1,4 +1,4 @@
-# Introduction
+# {{ page.level }} Introduction
 
 In recent years, the field of computer science (CS), and the broader technology industry, have undergone significant changes, though not simply technical ones. Around the same time that enrollments started booming {{ "cra-blog" | cite }}, the National Science Foundation (NSF) posted the original solicitation for _Broadening Participation in Computing_ {{ "nsf-bpc" | cite }}. As a result of the efforts to improve diversity in CS, curricula such as _Exploring Computer Science_ {{ "ecs" | cite }} (ECS), and _AP Computer Science Principles_ {{ "apcsp" | cite }} (AP CSP) have emerged. Many curricula have started to use visual programming languages (VPLs), also known as blocks-based languages, as their primary tool. As great as these environments can be, they often lack resources and tools found in more traditional environments (such as Python or Java). This lack of infrastructure can make courses more difficult to teach and scale, particularly to entirely online environments.
 

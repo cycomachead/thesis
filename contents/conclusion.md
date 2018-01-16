@@ -1,4 +1,4 @@
-# Conclusion
+# {{ page.level }} Conclusion
 
 We present λ, a system for autograding Snap<em>!</em> programs. The tool contains both a novel front-end student-centric autograder that presents immediate feedback to students, as well as a backend database that can serve as question repository. After successfully being used on edX, we've shown that the tools can be adopted in a traditional classroom. To accomplish we implemented the LTI protocol, so that λ may be used with as many LMSs are possible with the goal of reaching more students. Additionally, we've seen the benefits of having complete control of your infrastructure. 
 

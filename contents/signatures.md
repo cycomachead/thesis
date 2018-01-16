@@ -1,4 +1,4 @@
-# &nbsp;
+# {{ page.level }} &nbsp;
 
 
 <style>

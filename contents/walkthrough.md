@@ -1,8 +1,8 @@
-# Interface Walkthrough
+# {{ page.level }} Interface Walkthrough
 
 λ is composed of two parts: a webserver and a Snap<em>!</em> interface with autograding capabilities. In the current implementation, only instructors need to use the webserver, though in the future there may be functionality added for students. (See the [future work](future-work.md) section.)
 
-## Web Application
+## {{ page.level }}.1 Web Application
 
 The basic web interface (figure 4) presents a list of problems to try. This list is public, so anyone can attempt any problem, but instructors are expected to embed specific questions with their directions. Users can click on a link to work on a particular question.
 
@@ -22,7 +22,7 @@ These features are:
 
 ![A dashboard showing the first two labs the submission times for autograder requests for.](/images/graphs-overview.png)
 
-## The Snap<em>!</em> Interface
+## {{ page.level }}.2 The Snap<em>!</em> Interface
 
 The autograder augments the Snap<em>!</em> interface with a few basic tools. The initial version of the autograder included a button and "hamburger" menu, that were designed to appear integrated into Snap<em>!</em>. However, the apparent seamlessness was actually more confusing because the controls never fit within the rest of Snap<em>!</em>.
 

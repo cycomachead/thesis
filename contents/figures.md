@@ -1,4 +1,4 @@
-# List of Figures
+# {{ page.level }} List of Figures
 
 <p class="big-reset">&nbsp;</p>
 

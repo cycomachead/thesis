@@ -73,6 +73,10 @@
         "readme": "abstract.md"
     },
     "pdf": {
+        "ebookConvertOptions": {
+            "--pdf-add-toc": true,
+            "--embed-all-fonts": true
+        },
         "toc": true,
         "pageNumbers": true,
         "fontFamily": "Times New Roman",

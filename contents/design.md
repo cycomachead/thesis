@@ -1,8 +1,8 @@
-# Design Principles
+# {{ page.level }} Design Principles
 
 Educational design principles helped influence the design of the autograder and the direction for creation of exercises. While these design principles helped influence features and the user interface of the autograder, they are also extremely important as a guideline for how instructors and content authors should think about writing exercises and implementing them in the classroom.
 
-## Dual Modalities
+## {{ page.level }}.1 Dual Modalities
 A central challenge faced when considering development of the autograder was what to prioritize: Feedback or Grading? While both features are necessary for each other, there is an acute tension between a tool which is primarily motivated by providing open-ended feedback, and one that is designed to provide grades. The goal of this section is to consider the best possible interface we could give to students to help them improve their programming skills and complete lab exercises.
 
 A key aspect of this tension is how to handle the idea of correctness. In an introductory computer science course, we are often lenient with small differences in output from a program. (For example, Snap<em>!</em> allows students to use both traditional arrays and linked lists, but their visual output is the same. If test authors are not careful, it is easy to mistake one type of data as incorrect when it should be accepted.) While it is often possible to account for these differences when writing test cases, it can be significantly difficult. We need to make sure that when these tools are used for *grading*, they do not cause students unnecessary stress or frustration.
@@ -14,7 +14,7 @@ A key aspect of this tension is how to handle the idea of correctness. In an int
 <!--
 	Doesn't a feedback tool still suffer from this problem??
 -->
-## Learner-Centered Design
+## {{ page.level }}.2 Learner-Centered Design
 Learner-centered design (LCD) is a design principle adapted from user-centered-design (UCD) {{ "learner-centered" | cite }} {{ "user-centered" | cite }} {{ "learner-centered-2" | cite }}. Both LCD and UCD design principles start by establishing attributes about the user's goals. For LCD there are 4 main attributes:
 
 > • Learners do not possess the same domain expertise as users.
@@ -35,7 +35,7 @@ _Domain expertise_: Programming languages have to show error messages that could
 
 *Changing Understanding*: Dynamically capturing a user's understanding is incredibly difficult to do. At this point, we are not able to dynamically adjust exercises or feedback presented, but we have planned out possible methods for doing so. Currently, the best way for us to achieve this is to have Teaching Assistants (TAs) and instructors, who are conscious of students needs, recommend different problems for students to practice with.
 
-## Knowledge Integration
+## {{ page.level }}.3 Knowledge Integration
 Knowledge integration (KI) is a framework for approaching how students should synthesize information {{ "linn-ki" | cite }} . The KI framework has four components to orangize ideas:
 
 * **Adding Knowledge** involves bringing in new ideas that students have not seen before.
@@ -50,7 +50,7 @@ We chose not to use the *adding knowledge* component because we do not currently
 However, writing proper KI messages proved challenging in the current setup. The initial version of the autograder was designed more around presenting the results of test cases, than it was for longer forms of feedback. (This is one area for improvement.) Furthermore, trying to follow KI occasionally led to messages that did not necessarily fit within the rest of the BJC curriculum as it was not designed around the KI framework.
 
 
-## "TA-Centered Design"
+## {{ page.level }}.4 "TA-Centered Design"
 Though this is certainly lower on the priority list than _learner_-centered design, we make a point to describe _TA_-centered design, and why this matters for the tools we build. Teaching Assistants (TAs) and instructors, are critical users of the infrastructure in courses. They need to be able to easily update and create content, handle grades and so on. The longer or more difficult these tasks are, the less time TAs have to spend helping students learn.
 
 When considering TA-Centered Design, a TA is much more like a typical user in UCD than a learner in LCD, but there are many ideas that should be specifically recognized for TAs:

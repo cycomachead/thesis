@@ -1,4 +1,4 @@
-# Acknowledgements
+# {{ page.level }} Acknowledgements
 
 The work presented here exists due to the contributions of many people and grants from the National Science Foundation (grant 1138596), Google, and edX. Building an autograder would not be possible without BJC, Snap<em>!</em> and CS10, which have collectively been supported by hundreds of dedicated students and teachers over the past seven years.
 
