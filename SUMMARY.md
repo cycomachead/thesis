@@ -13,8 +13,8 @@
 	* [The Autograder Interface](contents/implementation-autograder.md)
 * [Experimental Setup](contents/trial.md)
 * [Results](contents/results.md)
-	* [Usage Analysis](contents/results-stats.md)
-	* [Survey Analysis](contents/results-survey.md)
+	* Usage Analysis
+	* Survey Analysis
 * [Future Work](contents/future-work.md)
 * [Conclusion](contents/conclusion.md)
 * [References](contents/references.md)

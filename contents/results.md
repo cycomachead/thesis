@@ -8,3 +8,7 @@ Secondly, when we surveyed students, they were almost evenly split between prefe
 <!--
 	Do we need to prove that feedback is beneficial?
 -->
+
+{% include 'results-stats.md' %}
+
+{% include 'results-survey.md' %}
