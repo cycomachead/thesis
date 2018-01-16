@@ -64,6 +64,11 @@ section li p:first-of-type:first-letter {
   For the table of contents
 */
 
+.section.toc a,
+.section.toc a:visited {
+  color: #000;
+}
+
 .book.font-family-0,
 h1, h2, h3, h4, h5, h6,
 h1.book-chapter,
