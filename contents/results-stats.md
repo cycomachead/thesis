@@ -1,7 +1,7 @@
-# {{ page.level }}.1 Usage & Statistics
+## {{ page.level }}.1 Usage & Statistics
 The first part of our analysis will be to look at how often and when students were submitting their labs. This data was obtained from aggregate information in the λ Submissions database as well as from bCourses to compare to non-autograded labs.
 
-## {{ page.level }}.1.1 Basic Statistics
+### {{ page.level }}.1.1 Basic Statistics
 
 * Total Number of students in CS10: 169
 * Total Number of student using the autograder: 145 (86%)
@@ -26,7 +26,7 @@ We can look at the number of times that students tried the autograder:
 
 What this shows us is that, though students were only required to complete one lab using the autograder, nearly 2/3 (93/149) found the autograder compelling enough to try a second time. From talking to students and staff, a portion of the drop off in students using the autograder may be due to the fact that the autograder doesn't handle pairs of students. Given that the later labs are some of the more difficult, many students may choose to work in pairs.
 
-## {{ page.level }}.1.2 Submission Times
+### {{ page.level }}.1.2 Submission Times
 The second thing to look at is _when_ students are submitting their work. While we certainly still want students to attend lab, improving the "at home" experience for students would be a significant benefit. Here, we see that students are choosing to use the autograder at home, with usage patterns that you would expect from undergraduates.
 
 These charts show the overall submission times for each of the three labs. The red bar indicates the date that the lab was due for full credit.
@@ -47,7 +47,7 @@ We can look at the days of the week as well as the time of day to see when stude
 
 Again, these graphs are fairly close to what course staff would expect. Most students are continuing to complete labs during their scheduled time, but a significant number are working at home.
 
-## {{ page.level }}.1.3 Staff Time Savings
+### {{ page.level }}.1.3 Staff Time Savings
 While time savings are not a primary motivation for this work, we should consider the potential benefits that could be saved be allowing students to get checked off using the autograder. Anecdotally, oral lab checkoffs take between 2 to 10 minutes to complete, with the average time somewhere around 3 to 4 minutes. The current usage patterns (as well as the results in the next section), suggest that we can expect 33%-50% of students to use the autograder.
 
 If we have 15 labs which use Snap<em>!</em>, and 150 students completing labs, and assume that a lab checkoff takes 3 minutes: 33% of students the autograder would free up approximately 38 hours of TA time. (This is slightly under 30% of the total workload for a single 8 hour per week TA appointment at Berkeley.)
@@ -56,7 +56,7 @@ However, if we have 15 labs which use Snap<em>!</em>, and 300 students completin
 
 Naturally, this might lead one to question the value of oral lab checkoffs. That's not the goal here at all. Oral lab checkoffs have been an incredible positive pedagogical tool. While writing tests can take some time, the hope is that the cost would aromatize itself well over many semesters.
 
-## {{ page.level }}.1.4 Submission Patterns
+### {{ page.level }}.1.4 Submission Patterns
 We can also look at how often students attempt each question. This shows whether students are using the autograder more as a feedback tool, as a crutch or as simply a credit mechanism. While there's no clear exact number of times a student should use submit their work, it's clear that we want an overall 'happy-medium'.
 
 ![Most students appear to only submit once at the end of their work.](/images//num-students-times-submitted.png)
