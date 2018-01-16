@@ -1,8 +1,8 @@
-# {{ page.level }} Ruby on Rails Backend
+# {{ page.level }}.1 Ruby on Rails Backend
 
 λ exists as modern "Software as a service" application. It's designed to be hosted by a cloud services provider, using a webserver and a separate database server.
 
-## {{ page.level }}.1 The Need for a Web Application
+## {{ page.level }}.1.1 The Need for a Web Application
 The JavaScript that powers the autograding works entirely client-side, meaning as long as you have the test files, there's no need for an internet connection. This path was initially chosen for three reasons:
 
 * Snap<em>!</em> is client-side, and evaluating Snap<em>!</em> projects on a server would require a significant amount of work.
@@ -11,7 +11,7 @@ The JavaScript that powers the autograding works entirely client-side, meaning a
 
 While the entirely client-side path was a good decision, we ran into a number of issues by relying on `JSInput` and trying to keep all features client-side.
 
-### {{ page.level }}.1.1 Challenges with `JSInput`
+### {{ page.level }}.1.1.1 Challenges with `JSInput`
 edX's `JSInput` problem type provides a JavaScript API for sending scores to the edX platform. It allows us to build in a custom version of Snap<em>!</em> alongside the rest of the content in edX.
 
 ![Snap! can be embedded in edX through JSInput.](/images/snap-edx.png)
@@ -30,10 +30,10 @@ Perhaps most importantly: the grading system could only work with edX. CS10 uses
 
 At the end of the day, the decision to build an initial version tied to `JSInput` was a good one, as it was still probably faster than building a full web application at the same time.
 
-## {{ page.level }}.2 Basic Architecture
+## {{ page.level }}.1.2 Basic Architecture
 λ is a Ruby on Rails (commonly abbreviated as "RoR") {{ "ror" | cite }} web application backed by a PostgreSQL database. The database primarily contains a set of questions, a submissions log, and a users table, as well as some additional metadata. The current version is deployed to Heroku at [lambda.cs10.org](https://lambda.cs10.org), but it could be deployed to any cloud provider.
 
-### {{ page.level }}.2.1 Questions and Submissions
+### {{ page.level }}.1.2.1 Questions and Submissions
 The core functionality is primarily supported by two, fairly simple, data models: `Question`s and `Submission`s.
 
 A **`Question`** needs only three attributes:
@@ -62,10 +62,10 @@ A **`Course`** is an object which manages the LTI connection, and needs only two
 
 Note that the `Course`s table isn't entirely necessary. The LTI connection's `key` and `secret` values *could* be entirely static (i.e. in an environment configuration), but such an approach is prone to errors and has security concerns as an application is connected to multiple systems.
 
-### {{ page.level }}.2.2 User Identities
+### {{ page.level }}.1.2.2 User Identities
 When building a tool with grading data, it was critically important that we had an easy and way to identify students, and to minimize the need for an additional login.
 
-#### {{ page.level }}.2.2.1 LTI
+#### {{ page.level }}.1.2.2.1 LTI
 The _IMS Global Learning Consortium_ {{ "ims" | cite }} is a standards body composed of educational instituions, intrest bodies and edtech companies. IMS publishes a specification called LTI {{ "lti" | cite }} which can briefly be described as "OAuth for educational applications". The LTI authentication process is actually based on the OAuth {{ "oauth" | cite }} protocol, but it's designed to be completely seamless for students. (Unlike a Google or Facebook authorization, a student who is already authenticated inside a LMS does not need to specifically 'authorize' an application when LTI is used.)
 
 The LTI protocol defines two "categories" of applications: a `Tool Consumer` (TC) and a `Tool Provider` (TP). λ is a provider, while the LMS is a typical consumer, in this case bCourses (Berkeley's instance of Instructure Canvas). A typical user flow involves a student visiting an assignment page (inside a LMS)
@@ -82,11 +82,11 @@ After completing the OAuth handshake, the TP (our application) checks for the pr
 * A grade passback URL is optional. If the application sees this URL, it will post a score back to the TC. If the URL is missing, then λ skips posting a score but still saves the submission to the local database.
 * User Info: If the instructional staff choose to, they can configure the LMS to send "Public" information to λ. (Public here means, what FERPA defines are directory information. In the case of UC Berkeley, this includes the student's name, email, and user ID, specifically different from their student ID. **REF?**) If the TC doesn't send public information, then it will send an obfuscated hash to identify each student. Again, this primarily only affects the analysis capabilities provided to TAs. 
 
-#### {{ page.level }}.2.2.2 Need For (Regular) OAuth
+#### {{ page.level }}.1.2.2.2 Need For (Regular) OAuth
 Unfortunately, despite the advantages of LTI, we found that traditional OAuth was still a necessary component. The primary motivation was the need for site admins, and TAs who can login without having to go through a LMS. We're using Google as an OAuth provider in addition to LTI. In the future, we would also like to connect the Snap<em>!</em> cloud account system through OAuth, but this is waiting on enhancements to the Snap<em>!</em> cloud.
 
 This feature can be useful for students as well, once we build out student dashboards. However, in order to be effective, we'll need a way to associate LTI accounts with OAuth accounts. Though not fully implemented, we will be able to automatically associate accounts for students if they share the same email address. For campuses setup like Berkeley, this will the default case for most students since their Google account and the LMS account originate from the same campus systems. If the emails don't automatically match, we should be able to provide this functionality by emailing activation codes. 
 
-## {{ page.level }}.3 Security Concerns
+## {{ page.level }}.1.3 Security Concerns
 Finally, we need to discuss a significant concern about security. Currently, the autograder test files are implemented in plain JavaScript, and are served alongside the rest of the page content. This means there's a fairly gaping hole allowing for Cross-Site-Scripting (XSS) vulnerabilities. The current mitigating factor is that only trusted accounts with an admin flag can upload test cases. This is an acceptable limitation for now, but in the [Future Work](./future-work.md) chapter we describe a potential way around this by allowing test cases to be written in Snap<em>!</em>, then securely complied to JS on the serverside.
 

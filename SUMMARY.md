@@ -9,8 +9,8 @@
 * [Design Principles](contents/design.md)
 * [Interface Walkthrough](contents/walkthrough.md)
 * [Implementation](contents/implementation.md)
-	* [The Web Application](contents/implementation-web-app.md)
-	* [The Autograder Interface](contents/implementation-autograder.md)
+	* The Web Application
+	* The Autograder Interface
 * [Experimental Setup](contents/trial.md)
 * [Results](contents/results.md)
 	* Usage Analysis
